@@ -1,15 +1,12 @@
 /* Base Link */
 a {
+  color: palette(purple);
 
   /* Link States */
   &:focus,
   &:hover {
-
+    color: palette(purple, light);
   }
   &:active {
-
-  }
-  &:visited {
-    color: inherit;
   }
 }

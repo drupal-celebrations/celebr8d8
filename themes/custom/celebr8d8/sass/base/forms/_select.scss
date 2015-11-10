@@ -1,5 +1,5 @@
 .form-select {
-  background-color: palette(mono, light);
+  background-color: palette(mono, x-light);
   border: 1px solid palette(purple);
   color: palette(purple, light);
   @include font-size(16px);
@@ -12,7 +12,7 @@
 
 /* Select */
 div.selector {
-  background-color: palette(mono, light);
+  background-color: palette(mono, x-light);
   border: 1px solid palette(purple);
   color: palette(purple, light);
   @include font-size(16px);
@@ -56,8 +56,8 @@ div.selector {
   }
 
   &.disabled {
-    background-color: palette(mono, mid-light);
-    color: palette(mono);
+    background-color: palette(mono, light);
+    color: palette(mono, mid-light);
 
     span {
       background-position: 100% -45px;

@@ -14,7 +14,7 @@
       padding: 0.25em 0.65em;
       border: 1px solid palette(purple);
       background-color: palette(purple);
-      color: palette(mono, light);
+      color: palette(mono, x-light);
     }
 
     a {
@@ -26,7 +26,7 @@
       &:focus {
         background-color: palette(purple, light);
         border-color: palette(purple, light);
-        color: palette(mono, light);
+        color: palette(mono, x-light);
       }
     }
 

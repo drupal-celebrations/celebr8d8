@@ -2,13 +2,59 @@
 ** Regions
 ******************************/
 .layout-container {
-  box-sizing: content-box;
-  padding-left: $spacing-unit-horizontal;
-  padding-right: $spacing-unit-horizontal;
-  max-width: $max-container-width;
-  margin-left: auto;
-  margin-right: auto;
+  @extend %constrained;
 }
+
+.path-frontpage .layout-main-wrapper {
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+
+  h1 {
+    @extend %element-hidden;
+  }
+}
+
+/******************************
+** Header
+******************************/
+.header {
+  position: relative;
+
+  .layout-container {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 150px;
+
+    @include breakpoint($xl, true) {
+      padding-right: 240px;
+    }
+  }
+}
+
+.region-header {
+  @extend %clearfix;
+  float: left;
+}
+
+.region-primary-menu {
+  float: right;
+}
+
+.site-logo {
+  float: left;
+  padding: 11px;
+
+  &,
+  img {
+    display: block;
+  }
+}
+
+.site-name {
+  @extend %element-invisible;
+}
+
 
 /******************************
 ** Footer

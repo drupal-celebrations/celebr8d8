@@ -27,8 +27,8 @@
   margin: 0;                      /* [6] */
   padding-top: 0;                 /* [6] */
   padding-bottom: 0;              /* [6] */
-  line-height: 2.25;              /* [7] */
-  height: 2.5em;                  /* [7] */
+  line-height: 2.75;              /* [7] */
+  height: 3em;                  /* [7] */
   padding-right: 1.5em;           /* [7] */
   padding-left: 1.5em;            /* [7] */
   background-color: transparent;  /* [8] */
@@ -51,7 +51,7 @@
   &:focus,
   &:visited {
     text-decoration: none;        /* [10] */
-    color: palette(mono, light);                  /* [11] */
+    color: palette(mono, dark);                  /* [11] */
   }
   &:hover {
   }
@@ -64,30 +64,11 @@
     padding: 0;
   }
 
-  &:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: palette(purple);
-    transform: scaleX(0);
-    transform-origin: 0 50%;
-    transition-property: transform;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-  }
-
   &:hover,
   &:focus,
   &:active {
-    color: white;
-
-    &:before {
-      transform: scaleX(1);
-    }
+    color: palette(purple);
+    background-color: palette(mono, dark);
   }
 }
 
@@ -149,6 +130,57 @@
 
 .button--tertiary {
 
+}
+
+.button--contrast {
+  border-color: palette(mono, x-light);
+  color: palette(mono, x-light);
+}
+
+.button--video {
+  position: relative;
+  padding-right: 3em;
+  z-index: 2;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+  }
+
+  &:before {
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: palette(mono, x-light);
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+
+  &:after {
+    @include icon(single-play);
+    right: 25px;
+    top: 35%;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: transparent;
+
+    &:before {
+      transform: scaleX(1);
+    }
+
+    &:after {
+      @include icon(single-play_active, false, false);
+    }
+  }
 }
 
 /**

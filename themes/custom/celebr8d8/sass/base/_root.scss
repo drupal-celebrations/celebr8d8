@@ -1,6 +1,10 @@
 /******************************
 ** HTML/Body
 ******************************/
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: palette(mono, mid-light);
+  background-color: palette(mono, light);
 }

@@ -1,18 +1,9 @@
 .site-footer {
-  background-color: palette(mono);
+  background-color: palette(mono, mid-light);
   color: palette(purple, light);
 
   h2 {
     color: palette(purple);
-  }
-
-  a {
-    color: palette(purple);
-
-    &:hover,
-    &:focus {
-      color: palette(purple, light);
-    }
   }
 }
 
