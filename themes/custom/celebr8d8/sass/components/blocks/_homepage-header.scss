@@ -1,0 +1,37 @@
+#block-celebr8d8-homepage-header {
+  @extend %homepage-block;
+  padding-top: double($spacing-unit-vertical);
+  padding-bottom: double($spacing-unit-vertical);
+  background: palette(purple) image-url('home-banner.jpg') 50% 50% / cover no-repeat;
+  color: palette(green);
+
+  .field--name-body {
+    > span {
+      display: block;
+      @include font-size(34px);
+      font-weight: 700;
+      letter-spacing: -0.06em;
+      line-height: 1;
+
+      @include breakpoint($m, true) {
+        @include font-size(70px);
+        line-height: 1;
+      }
+
+      > span {
+        color: palette(mono, x-light);
+      }
+    }
+
+    > a {
+      margin-top: $spacing-unit-vertical;
+      @extend .button;
+      @extend .button--contrast;
+      @extend .button--video;
+
+      @include breakpoint($s, true) {
+        margin-top: double($spacing-unit-vertical);
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+%homepage-block {
+  padding-top: $spacing-unit-vertical;
+  padding-bottom: $spacing-unit-vertical;
+
+  @include breakpoint($m) {
+    padding-top: double($spacing-unit-vertical);
+    padding-bottom: double($spacing-unit-vertical);
+  }
+
+  @include breakpoint($xl, true) {
+    padding-top: quadruple($spacing-unit-vertical);
+    padding-bottom: quadruple($spacing-unit-vertical);
+  }
+
+  .field--name-body {
+    @extend %constrained;
+    @extend %clearfix;
+  }
+}
