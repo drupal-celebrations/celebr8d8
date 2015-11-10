@@ -1,0 +1,19 @@
+uuid: 379c2002-d8dd-4e8d-933d-61a75321c9c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.celebr8_drupal8_contact
+id: contact_message.celebr8_drupal8_contact.default
+targetEntityType: contact_message
+bundle: celebr8_drupal8_contact
+mode: default
+content:
+  message:
+    type: string
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }
