@@ -1,0 +1,59 @@
+uuid: b5cf0560-6060-4baf-9d03-3cff1abc4546
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.volunteer.field_do_username
+    - field.field.node.volunteer.field_photo
+    - field.field.node.volunteer.field_prof
+    - field.field.node.volunteer.field_twitter
+    - node.type.volunteer
+  module:
+    - image
+    - text
+id: node.volunteer.default
+targetEntityType: node
+bundle: volunteer
+mode: default
+content:
+  field_do_username:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_photo:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_prof:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_twitter:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true
