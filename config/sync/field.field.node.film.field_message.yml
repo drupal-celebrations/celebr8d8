@@ -1,0 +1,21 @@
+uuid: 47c902e2-b650-41a4-9f00-b85f34cb9790
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_message
+    - node.type.film
+  module:
+    - text
+id: node.film.field_message
+field_name: field_message
+entity_type: node
+bundle: film
+label: Message
+description: 'A message to us.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

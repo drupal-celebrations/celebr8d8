@@ -1,0 +1,9 @@
+uuid: 51a851c1-c71e-460e-aa00-d3e54b5df76e
+langcode: en
+status: true
+dependencies: {  }
+name: 'Film Category'
+vid: film_category
+description: ''
+hierarchy: 0
+weight: 0

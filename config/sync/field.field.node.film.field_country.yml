@@ -1,0 +1,21 @@
+uuid: 4aa13b31-e46c-44a5-a000-f9688cd6d83e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_country
+    - node.type.film
+  module:
+    - options
+id: node.film.field_country
+field_name: field_country
+entity_type: node
+bundle: film
+label: Country
+description: 'Where you are from?'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

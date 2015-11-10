@@ -1,0 +1,19 @@
+uuid: c385ca86-2f28-430b-8901-1b6f6066114b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.film
+id: node.film.field_email
+field_name: field_email
+entity_type: node
+bundle: film
+label: Email
+description: 'This will only be used to contact you and will not be shared.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

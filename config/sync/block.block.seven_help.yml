@@ -1,0 +1,20 @@
+uuid: 5d50cb67-42e8-4941-9800-a4e987f42e00
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - seven
+id: seven_help
+theme: seven
+region: help
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

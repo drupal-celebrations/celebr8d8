@@ -1,0 +1,17 @@
+uuid: 96194d77-8aca-48e2-9400-f0710f65e418
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Film
+type: film
+description: 'Submitted films from the community.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

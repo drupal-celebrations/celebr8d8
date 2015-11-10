@@ -1,0 +1,303 @@
+uuid: 8f35336f-6825-4a5e-9608-8edb3093e178
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_language
+field_name: field_language
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: af
+      label: 'Afrikaans (Afrikaans)'
+    -
+      value: am
+      label: 'Amharic (አማርኛ)'
+    -
+      value: ar
+      label: 'Arabic (العربية)'
+    -
+      value: ast
+      label: 'Asturian (Asturianu)'
+    -
+      value: az
+      label: 'Azerbaijani (Azərbaycanca)'
+    -
+      value: be
+      label: 'Belarusian (Беларуская)'
+    -
+      value: bg
+      label: 'Bulgarian (Български)'
+    -
+      value: bn
+      label: 'Bengali (বাংলা)'
+    -
+      value: bo
+      label: 'Tibetan (བོད་སྐད་)'
+    -
+      value: bs
+      label: 'Bosnian (Bosanski)'
+    -
+      value: ca
+      label: 'Catalan (Català)'
+    -
+      value: cs
+      label: 'Czech (Čeština)'
+    -
+      value: cy
+      label: 'Welsh (Cymraeg)'
+    -
+      value: da
+      label: 'Danish (Dansk)'
+    -
+      value: de
+      label: 'German (Deutsch)'
+    -
+      value: dz
+      label: 'Dzongkha (རྫོང་ཁ)'
+    -
+      value: el
+      label: 'Greek (Ελληνικά)'
+    -
+      value: en
+      label: 'English (English)'
+    -
+      value: eo
+      label: 'Esperanto (Esperanto)'
+    -
+      value: es
+      label: 'Spanish (Español)'
+    -
+      value: et
+      label: 'Estonian (Eesti)'
+    -
+      value: eu
+      label: 'Basque (Euskera)'
+    -
+      value: fa
+      label: 'Persian, Farsi (فارسی)'
+    -
+      value: fi
+      label: 'Finnish (Suomi)'
+    -
+      value: fil
+      label: 'Filipino (Filipino)'
+    -
+      value: fo
+      label: 'Faeroese (Føroyskt)'
+    -
+      value: fr
+      label: 'French (Français)'
+    -
+      value: fy
+      label: 'Frisian, Western (Frysk)'
+    -
+      value: ga
+      label: 'Irish (Gaeilge)'
+    -
+      value: gd
+      label: 'Scots Gaelic (Gàidhlig)'
+    -
+      value: gl
+      label: 'Galician (Galego)'
+    -
+      value: gsw-berne
+      label: 'Swiss German (Schwyzerdütsch)'
+    -
+      value: gu
+      label: 'Gujarati (ગુજરાતી)'
+    -
+      value: he
+      label: 'Hebrew (עברית)'
+    -
+      value: hi
+      label: 'Hindi (हिन्दी)'
+    -
+      value: hr
+      label: 'Croatian (Hrvatski)'
+    -
+      value: ht
+      label: 'Haitian Creole (Kreyòl ayisyen)'
+    -
+      value: hu
+      label: 'Hungarian (Magyar)'
+    -
+      value: hy
+      label: 'Armenian (Հայերեն)'
+    -
+      value: id
+      label: 'Indonesian (Bahasa Indonesia)'
+    -
+      value: is
+      label: 'Icelandic (Íslenska)'
+    -
+      value: it
+      label: 'Italian (Italiano)'
+    -
+      value: ja
+      label: 'Japanese (日本語)'
+    -
+      value: jv
+      label: 'Javanese (Basa Java)'
+    -
+      value: ka
+      label: 'Georgian (ქართული ენა)'
+    -
+      value: kk
+      label: 'Kazakh (Қазақ)'
+    -
+      value: km
+      label: 'Khmer (ភាសាខ្មែរ)'
+    -
+      value: kn
+      label: 'Kannada (ಕನ್ನಡ)'
+    -
+      value: ko
+      label: 'Korean (한국어)'
+    -
+      value: ku
+      label: 'Kurdish (Kurdî)'
+    -
+      value: ky
+      label: 'Kyrgyz (Кыргызча)'
+    -
+      value: lo
+      label: 'Lao (ພາສາລາວ)'
+    -
+      value: lt
+      label: 'Lithuanian (Lietuvių)'
+    -
+      value: lv
+      label: 'Latvian (Latviešu)'
+    -
+      value: mg
+      label: 'Malagasy (Malagasy)'
+    -
+      value: mk
+      label: 'Macedonian (Македонски)'
+    -
+      value: ml
+      label: 'Malayalam (മലയാളം)'
+    -
+      value: mn
+      label: 'Mongolian (монгол)'
+    -
+      value: mr
+      label: 'Marathi (मराठी)'
+    -
+      value: ms
+      label: 'Bahasa Malaysia (بهاس ملايو)'
+    -
+      value: my
+      label: 'Burmese (ဗမာစကား)'
+    -
+      value: ne
+      label: 'Nepali (नेपाली)'
+    -
+      value: nl
+      label: 'Dutch (Nederlands)'
+    -
+      value: nb
+      label: 'Norwegian Bokmål (Norsk, bokmål)'
+    -
+      value: nn
+      label: 'Norwegian Nynorsk (Norsk, nynorsk)'
+    -
+      value: oc
+      label: 'Occitan (Occitan)'
+    -
+      value: pa
+      label: 'Punjabi (ਪੰਜਾਬੀ)'
+    -
+      value: pl
+      label: 'Polish (Polski)'
+    -
+      value: pt-pt
+      label: 'Portuguese, Portugal (Português, Portugal)'
+    -
+      value: pt-br
+      label: 'Portuguese, Brazil (Português, Brasil)'
+    -
+      value: ro
+      label: 'Romanian (Română)'
+    -
+      value: ru
+      label: 'Russian (Русский)'
+    -
+      value: sco
+      label: 'Scots (Scots)'
+    -
+      value: se
+      label: 'Northern Sami (Sámi)'
+    -
+      value: si
+      label: 'Sinhala (සිංහල)'
+    -
+      value: sk
+      label: 'Slovak (Slovenčina)'
+    -
+      value: sl
+      label: 'Slovenian (Slovenščina)'
+    -
+      value: sq
+      label: 'Albanian (Shqip)'
+    -
+      value: sr
+      label: 'Serbian (Српски)'
+    -
+      value: sv
+      label: 'Swedish (Svenska)'
+    -
+      value: sw
+      label: 'Swahili (Kiswahili)'
+    -
+      value: ta
+      label: 'Tamil (தமிழ்)'
+    -
+      value: ta-lk
+      label: 'Tamil, Sri Lanka (தமிழ், இலங்கை)'
+    -
+      value: te
+      label: 'Telugu (తెలుగు)'
+    -
+      value: th
+      label: 'Thai (ภาษาไทย)'
+    -
+      value: tr
+      label: 'Turkish (Türkçe)'
+    -
+      value: tyv
+      label: 'Tuvan (Тыва дыл)'
+    -
+      value: ug
+      label: 'Uyghur (Уйғур)'
+    -
+      value: uk
+      label: 'Ukrainian (Українська)'
+    -
+      value: ur
+      label: 'Urdu (اردو)'
+    -
+      value: vi
+      label: 'Vietnamese (Tiếng Việt)'
+    -
+      value: xx-lolspeak
+      label: 'Lolspeak (Lolspeak)'
+    -
+      value: zh-hans
+      label: 'Chinese, Simplified (简体中文)'
+    -
+      value: zh-hant
+      label: 'Chinese, Traditional (繁體中文)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

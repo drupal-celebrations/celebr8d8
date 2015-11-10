@@ -1,0 +1,23 @@
+uuid: 00f917c4-5ac5-4d84-a700-e6580ae4be92
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_language
+    - node.type.film
+  module:
+    - options
+id: node.film.field_language
+field_name: field_language
+entity_type: node
+bundle: film
+label: Language
+description: 'What language is the video in?'
+required: true
+translatable: false
+default_value:
+  -
+    value: en
+default_value_callback: ''
+settings: {  }
+field_type: list_string

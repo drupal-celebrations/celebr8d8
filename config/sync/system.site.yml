@@ -1,0 +1,12 @@
+uuid: ed540702-4841-4e60-b13d-61794f3a72ef
+name: 'Celebr8 D8'
+mail: admin@example.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /all-films
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en

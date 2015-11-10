@@ -1,0 +1,10 @@
+uuid: 7500c90f-5e3d-479d-8b2d-4588ae568488
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.submission
+label: Submission
+targetEntityType: node
+cache: true

@@ -1,0 +1,21 @@
+uuid: f4276972-bb11-443a-a055-85eca6d73484
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_youtube_url
+    - node.type.film
+  module:
+    - youtube
+id: node.film.field_youtube_url
+field_name: field_youtube_url
+entity_type: node
+bundle: film
+label: 'YouTube URL'
+description: 'e.g. https://www.youtube.com/watch?v=rWQ_v8Fqmy4'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: youtube

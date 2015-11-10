@@ -1,0 +1,19 @@
+uuid: d6320c8b-5efd-49c4-a902-2d51d47cfbe4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_your_name
+    - node.type.film
+id: node.film.field_your_name
+field_name: field_your_name
+entity_type: node
+bundle: film
+label: 'Your Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

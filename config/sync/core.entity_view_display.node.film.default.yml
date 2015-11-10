@@ -1,0 +1,76 @@
+uuid: 253c152a-99fd-43ee-a600-0e871494d36a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.film.field_category
+    - field.field.node.film.field_cc_license
+    - field.field.node.film.field_country
+    - field.field.node.film.field_drupal_org_username
+    - field.field.node.film.field_email
+    - field.field.node.film.field_language
+    - field.field.node.film.field_message
+    - field.field.node.film.field_rights
+    - field.field.node.film.field_twitter_account
+    - field.field.node.film.field_your_name
+    - field.field.node.film.field_youtube_url
+    - node.type.film
+  module:
+    - options
+    - user
+    - youtube
+id: node.film.default
+targetEntityType: node
+bundle: film
+mode: default
+content:
+  field_country:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_drupal_org_username:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_twitter_account:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_your_name:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_youtube_url:
+    weight: 0
+    label: hidden
+    settings:
+      youtube_size: responsive
+      youtube_width: ''
+      youtube_height: ''
+      youtube_autoplay: true
+      youtube_showinfo: true
+      youtube_autohide: true
+      youtube_loop: false
+      youtube_controls: false
+      youtube_iv_load_policy: false
+    third_party_settings: {  }
+    type: youtube_video
+hidden:
+  field_category: true
+  field_cc_license: true
+  field_email: true
+  field_language: true
+  field_message: true
+  field_rights: true
+  links: true

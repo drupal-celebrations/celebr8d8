@@ -1,0 +1,70 @@
+uuid: a078adeb-9f6a-46e1-8300-0c2915388244
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.film.field_category
+    - field.field.node.film.field_cc_license
+    - field.field.node.film.field_country
+    - field.field.node.film.field_drupal_org_username
+    - field.field.node.film.field_email
+    - field.field.node.film.field_language
+    - field.field.node.film.field_message
+    - field.field.node.film.field_rights
+    - field.field.node.film.field_twitter_account
+    - field.field.node.film.field_your_name
+    - field.field.node.film.field_youtube_url
+    - node.type.film
+  module:
+    - options
+    - user
+    - youtube
+id: node.film.teaser
+targetEntityType: node
+bundle: film
+mode: teaser
+content:
+  field_country:
+    type: list_default
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_drupal_org_username:
+    type: string
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_twitter_account:
+    type: string
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_your_name:
+    type: string
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_youtube_url:
+    type: youtube_thumbnail
+    weight: 0
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+hidden:
+  field_category: true
+  field_cc_license: true
+  field_email: true
+  field_language: true
+  field_message: true
+  field_rights: true
+  links: true
