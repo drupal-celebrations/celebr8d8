@@ -1,0 +1,30 @@
+uuid: 72db71ab-6fa9-404f-8819-25ce0735465d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.films_main
+  module:
+    - system
+    - views
+  theme:
+    - celebr8d8
+id: celebr8d8_views_block__films_main_featured
+theme: celebr8d8
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:films_main-featured'
+settings:
+  id: 'views_block:films_main-featured'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

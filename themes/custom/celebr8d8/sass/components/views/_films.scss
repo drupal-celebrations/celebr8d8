@@ -1,0 +1,36 @@
+.view-films-main {
+  .view-content {
+    padding-top: $spacing-unit-vertical;
+    padding-bottom: $spacing-unit-vertical;
+  }
+
+  .views-view-grid {
+    @extend %constrained;
+    @extend %clearfix;
+  }
+
+  .views-row {
+    @include breakpoint($s ($m - 1)) {
+      @include float-span(4);
+
+      &:nth-child(2n) {
+        @include float-span(4, 'last');
+      }
+    }
+    @include breakpoint($m ($xl - 1)) {
+      @include float-span(4);
+
+      &:nth-child(3n) {
+        @include float-span(4, 'last');
+      }
+    }
+
+    @include breakpoint($xl, true) {
+      @include float-span(3);
+
+      &:nth-child(4n) {
+        @include float-span(3, 'last');
+      }
+    }
+  }
+}
