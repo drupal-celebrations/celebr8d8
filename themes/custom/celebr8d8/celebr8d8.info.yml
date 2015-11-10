@@ -5,6 +5,9 @@ core: 8.x
 base theme: classy
 libraries:
   - celebr8d8/global-css
+  - celebr8d8/global-js
+stylesheets-remove:
+  - core/themes/classy/css
 regions:
   header: Header
   primary_menu: 'Primary menu'

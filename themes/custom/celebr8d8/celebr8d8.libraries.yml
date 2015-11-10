@@ -4,3 +4,7 @@ global-css:
       css/celebr8d8.normalize.css: {}
       css/celebr8d8.styles.css: {}
 #      css/celebr8d8.no-query.css: { browsers: { IE: 'lte IE 8' }}
+
+global-js:
+  js:
+    js/modernizr.custom.min.js: {}
