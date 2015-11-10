@@ -1,14 +1,14 @@
-uuid: 00ae2591-3bbc-4d34-ad00-c20e002efd8c
+uuid: c9f7c769-23d2-490f-ac00-c2daddb59f6c
 langcode: en
 status: false
 dependencies:
   module:
     - system
   theme:
-    - bartik
-id: bartik_powered
-theme: bartik
-region: '-1'
+    - celebr8d8
+id: celebr8d8_powered
+theme: celebr8d8
+region: header
 weight: -8
 provider: null
 plugin: system_powered_by_block

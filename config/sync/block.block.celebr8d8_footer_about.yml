@@ -1,4 +1,4 @@
-uuid: 3b78ab23-fd0a-461a-bc4b-75792a438b09
+uuid: e9c792f7-7aae-4e40-8745-692dc0f6fdf0
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,9 @@ dependencies:
   module:
     - block_content
   theme:
-    - bartik
-id: footer_about
-theme: bartik
+    - celebr8d8
+id: celebr8d8_footer_about
+theme: celebr8d8
 region: footer_first
 weight: -9
 provider: null

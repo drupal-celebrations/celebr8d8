@@ -1,4 +1,4 @@
-uuid: 5fd9779a-1454-43bf-bd00-a445f4c2b04e
+uuid: 874eb299-1a0c-416d-a400-0fc872ee95fb
 langcode: en
 status: false
 dependencies:
@@ -7,10 +7,10 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
-id: bartik_footer
-theme: bartik
-region: '-1'
+    - celebr8d8
+id: celebr8d8_footer
+theme: celebr8d8
+region: header
 weight: -9
 provider: null
 plugin: 'system_menu_block:footer'

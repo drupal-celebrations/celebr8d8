@@ -1,13 +1,13 @@
-uuid: 0d30b0ec-2607-4ec0-9705-5b79d2aac02c
+uuid: e538f088-943b-4905-b924-369be3cd736a
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
-id: bartik_breadcrumbs
-theme: bartik
+    - celebr8d8
+id: celebr8d8_breadcrumbs
+theme: celebr8d8
 region: breadcrumb
 weight: 0
 provider: null

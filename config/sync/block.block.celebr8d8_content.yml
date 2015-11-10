@@ -1,13 +1,13 @@
-uuid: a9e81141-47d5-4106-8200-acf4e184e4b5
+uuid: 5baf85fc-c90d-4dfe-9044-6867ae0eade1
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
-id: bartik_content
-theme: bartik
+    - celebr8d8
+id: celebr8d8_content
+theme: celebr8d8
 region: content
 weight: -1
 provider: null

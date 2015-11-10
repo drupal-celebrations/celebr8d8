@@ -1,4 +1,4 @@
-uuid: 1f0bf66a-b449-4d35-ac01-01b3f07689f0
+uuid: 83d1f006-e1e7-4b84-be3b-597aa99df3bd
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,9 @@ dependencies:
   module:
     - block_content
   theme:
-    - bartik
-id: add_video_cta
-theme: bartik
+    - celebr8d8
+id: celebr8d8_add_video_cta
+theme: celebr8d8
 region: header
 weight: -11
 provider: null

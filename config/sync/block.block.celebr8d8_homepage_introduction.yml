@@ -1,23 +1,23 @@
-uuid: 4b9b7a90-75fc-46ed-a92d-45bb0bd042f1
+uuid: a3e07cfb-d00a-436e-8c44-6827aeb57625
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:237ef713-2464-416e-a300-a9f44f4682c6'
+    - 'block_content:basic:f675d9a4-f4e8-452e-8805-5f15ee1c641e'
   module:
     - block_content
     - system
   theme:
-    - bartik
-id: homepage_header
-theme: bartik
+    - celebr8d8
+id: celebr8d8_homepage_introduction
+theme: celebr8d8
 region: content
-weight: -5
+weight: -3
 provider: null
-plugin: 'block_content:237ef713-2464-416e-a300-a9f44f4682c6'
+plugin: 'block_content:f675d9a4-f4e8-452e-8805-5f15ee1c641e'
 settings:
-  id: 'block_content:237ef713-2464-416e-a300-a9f44f4682c6'
-  label: 'Homepage Header'
+  id: 'block_content:f675d9a4-f4e8-452e-8805-5f15ee1c641e'
+  label: 'Homepage Introduction'
   provider: block_content
   label_display: '0'
   status: true

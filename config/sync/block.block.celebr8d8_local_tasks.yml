@@ -1,11 +1,11 @@
-uuid: ea69f149-b860-4ba2-ae52-82577b9589db
+uuid: b0b5d6f5-245d-4630-9446-70ccfbb389a8
 langcode: en
 status: true
 dependencies:
   theme:
-    - bartik
-id: bartik_local_tasks
-theme: bartik
+    - celebr8d8
+id: celebr8d8_local_tasks
+theme: celebr8d8
 region: content
 weight: -6
 provider: null
