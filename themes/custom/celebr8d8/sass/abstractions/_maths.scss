@@ -1,0 +1,24 @@
+// Expressive maths helper functions (with rounding).
+@function quarter($input) {
+  @return round($input / 4);
+}
+
+@function third($input) {
+  @return round($input / 3);
+}
+
+@function halve($input) {
+  @return round($input / 2);
+}
+
+@function double($input) {
+  @return round($input * 2);
+}
+
+@function triple($input) {
+  @return round($input * 3);
+}
+
+@function quadruple($input) {
+  @return round($input * 4);
+}

@@ -1,0 +1,6 @@
+global-css:
+  css:
+    theme:
+      css/celebr8d8.normalize.css: {}
+      css/celebr8d8.styles.css: {}
+      css/celebr8d8.no-query.css: {}

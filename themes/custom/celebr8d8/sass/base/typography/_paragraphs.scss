@@ -1,0 +1,13 @@
+/* Paragraphs */
+p {
+  margin-bottom: 1em;
+
+  /* Last Paragraph */
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  /* Adjacent Image */
+  & + img {
+    float: left;
+  }
+}

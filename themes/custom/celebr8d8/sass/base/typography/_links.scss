@@ -1,0 +1,15 @@
+/* Base Link */
+a {
+
+  /* Link States */
+  &:focus,
+  &:hover {
+
+  }
+  &:active {
+
+  }
+  &:visited {
+    color: inherit;
+  }
+}

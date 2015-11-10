@@ -1,0 +1,183 @@
+/**
+ * Default, secondary button styles (@see function modifiers below).
+ *
+ * Inspired by csswizardry.com/beautons
+ *
+ *  1. Allow us to better style box model properties.
+ *  2. Line different sized buttons up a little nicer.
+ *  3. Stop buttons wrapping and looking broken.
+ *  4. Make buttons inherit font styles.
+ *  5. Force all elements using beautons to appear clickable.
+ *  6. Normalise box model styles.
+ *  7. If the button’s text is 1em, and the button is (3 * font-size) tall, then
+ *     there is 1em of space above and below that text. We therefore apply 1em
+ *     of space to the left and right, as padding, to keep consistent spacing.
+ *  8. Basic cosmetics for default buttons. Change or override at will.
+ *  9. Fixes odd inner spacing in IE7.
+ * 10. Don’t allow buttons to have underlines; it kinda ruins the illusion.
+ * 11. Prevents from inheriting default anchor styles.
+ */
+.button {
+  display: inline-block;          /* [1] */
+  vertical-align: middle;         /* [2] */
+  white-space: nowrap;            /* [3] */
+  font-family: 'Bangers';         /* [4] */
+  @include font-size(20px);       /* [4] */
+  cursor: pointer;                /* [5] */
+  margin: 0;                      /* [6] */
+  padding-top: 0;                 /* [6] */
+  padding-bottom: 0;              /* [6] */
+  line-height: 2.25;              /* [7] */
+  height: 2.5em;                  /* [7] */
+  padding-right: 1.5em;           /* [7] */
+  padding-left: 1.5em;            /* [7] */
+  background-color: transparent;  /* [8] */
+  border-radius: 0;               /* [8] */
+  overflow: visible;              /* [9] */
+  border: 2px solid palette(mono, dark);
+  border-bottom-width: 8px;
+
+
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus,
+  &:visited {
+    text-decoration: none;        /* [10] */
+    color: palette(mono, light);                  /* [11] */
+  }
+  &:hover {
+  }
+  &:active,
+  &:focus {
+    outline: none;
+  }
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: palette(purple);
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: white;
+
+    &:before {
+      transform: scaleX(1);
+    }
+  }
+}
+
+/**
+ * Button size modifiers.
+ *
+ * These all follow the same sizing rules as above; text is 1em, space around it
+ * remains uniform.
+ */
+.button--small {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  line-height: 2;
+  height: 2em;
+}
+.button--large {
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  line-height: 4;
+  height: 4em;
+}
+.button--huge {
+  padding-right: 2em;
+  padding-left: 2em;
+  line-height: 5;
+  height: 5em;
+}
+
+/**
+ * These buttons will fill the entirety of their container.
+ *
+ * 1. Remove padding so that widths and paddings don’t conflict.
+ */
+.button--full {
+  width: 100%;
+  padding-right: 0;           /* [1] */
+  padding-left: 0;            /* [1] */
+  text-align: center;
+}
+
+/**
+ * Make the button inherit sizing from its parent.
+ */
+.button--natural {
+  vertical-align: baseline;
+  font-size: inherit;
+  line-height: inherit;
+  height: auto;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+/**
+ * Button function modifiers.
+ */
+.button--primary {
+
+}
+
+.button--tertiary {
+
+}
+
+/**
+ * Positive actions; e.g. sign in, purchase, submit, etc.
+ */
+.button--positive {
+  background-color: palette(positive);
+  color:#FFF;
+}
+
+/**
+ * Negative actions; e.g. close account, delete photo, remove friend, etc.
+ */
+.button--negative{
+  background-color: palette(negative);
+  color:#FFF;
+}
+
+/**
+ * Inactive, disabled buttons.
+ *
+ * 1. Make the button look like normal text when hovered.
+ */
+.button--inactive,
+.button--inactive:hover,
+.button--inactive:active,
+.button--inactive:focus{
+  background-color: #DDD;
+  color: #777;
+  cursor: default;        /* [1] */
+  @include box-shadow(none);
+}

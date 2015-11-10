@@ -1,0 +1,12 @@
+// Font-face.
+@import url('//fonts.googleapis.com/css?family=Karla:400,700|Bangers|Rubik:500');
+
+// Define base font size and line height.
+$base-font-size:    16px;
+$base-line-height:  1.4em;
+
+// Define the font families used throught the theme.
+$base-font-family:  'Karla', Arial, sans-serif;
+
+// Define the base font color, to be used as the default throughout the site.
+$base-font-color:   palette(mono, dark);

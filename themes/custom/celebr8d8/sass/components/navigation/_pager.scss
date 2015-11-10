@@ -1,0 +1,102 @@
+.pager {
+  font-size: 0;
+
+  li {
+    display: inline-block;
+    padding: 0;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    @include font-size(14px);
+    font-weight: 700;
+    vertical-align: top;
+
+    &.pager__item--current {
+      padding: 0.25em 0.65em;
+      border: 1px solid palette(purple);
+      background-color: palette(purple);
+      color: palette(mono, light);
+    }
+
+    a {
+      display: block;
+      padding: 0.25em 0.65em;
+      border: 1px solid palette(purple);
+
+      &:hover,
+      &:focus {
+        background-color: palette(purple, light);
+        border-color: palette(purple, light);
+        color: palette(mono, light);
+      }
+    }
+
+    &.pager__item--first,
+    &.pager__item--last {
+      a {
+
+        border: none;
+        &:hover,
+        &:focus {
+          color: palette(purple, light);
+          background-color: transparent;
+        }
+      }
+    }
+
+    &.pager__item--first {
+      a {
+//        @include icon(pager-first, false, true);
+        padding-left: 30px;
+        background-position: 0 50%;
+      }
+    }
+
+    &.pager__item--last {
+      a {
+//        @include icon(pager-last, false, true);
+        padding-right: 30px;
+        background-position: 100% 50%;
+      }
+    }
+
+    &.pager__item--previous,
+    &.pager__item--next {
+      padding: 0;
+
+      a {
+        height: 37px;
+        width: 33px;
+
+        &:hover,
+        &:focus {
+          border-color: palette(purple, light);
+          background-color: palette(purple, light);
+        }
+      }
+    }
+
+    &.pager__item--previous {
+      a {
+//        @include icon(pager-prev, false, true);
+        background-position: 50% 50%;
+
+        &:hover,
+        &:focus {
+//          @include icon(pager-prev_hover, false, false);
+        }
+      }
+    }
+
+    &.pager__item--next {
+      a {
+//        @include icon(pager-next, false, true);
+        background-position: 50% 50%;
+
+        &:hover,
+        &:focus {
+//          @include icon(pager-next_hover, false, false);
+        }
+      }
+    }
+  }
+}

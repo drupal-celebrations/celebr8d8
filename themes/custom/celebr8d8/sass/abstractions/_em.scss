@@ -1,0 +1,4 @@
+// Convert PX to EM using base font size as default context.
+@function em($px, $context: $base-font-size) {
+  @return $px / $context + 0em
+}

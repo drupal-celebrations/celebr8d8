@@ -1,0 +1,17 @@
+.l-footer {
+  background-color: palette(mono);
+  color: palette(purple, light);
+
+  h2 {
+    color: palette(purple);
+  }
+
+  a {
+    color: palette(purple);
+
+    &:hover,
+    &:focus {
+      color: palette(purple, light);
+    }
+  }
+}

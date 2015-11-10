@@ -1,0 +1,22 @@
+h1, .alpha,
+h2, .beta,
+h3, .gamma,
+h4, .delta,
+h5, .epsilon,
+h6, .zeta {
+  margin-top: 0.4em;
+  margin-bottom: 0.6em;
+
+  line-height: 1.2em;
+
+  a {
+    color: inherit;
+  }
+}
+
+h1, .alpha {}
+h2, .beta {}
+h3, .gamma {}
+h4, .delta {}
+h5, .epsilon {}
+h6, .zeta {}
