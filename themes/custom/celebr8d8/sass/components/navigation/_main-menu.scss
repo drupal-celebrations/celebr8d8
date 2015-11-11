@@ -54,6 +54,10 @@
       @include breakpoint($l, true) {
         border-bottom: none;
         float: left;
+        margin-right: double($spacing-unit-horizontal);
+      }
+
+      @include breakpoint($xl, true) {
         margin-right: triple($spacing-unit-horizontal);
       }
     }

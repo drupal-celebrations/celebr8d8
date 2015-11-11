@@ -9,14 +9,14 @@
    * Initialise the tabs JS.
    */
   Drupal.behaviors.menuToggle = {
-    attach: function (context, settings) {
+    attach: function () {
       var $header = $('.region-header'),
         $nav = $('.region-navigation'),
         menuOpenClass = 'toggle--menu--open';
 
       // Function to close open menus.
       function manualToggleMenu() {
-        if (matchMedia('(min-width: 960px)').matches) {
+        if (matchMedia('(min-width: 961px)').matches) {
           if ($('.toggle--menu').not('.toggle--menu--open').length) {
             $nav.show();
           }
@@ -40,7 +40,7 @@
           }
         });
 
-      $(window).on('resize', Drupal.debounce(manualToggleMenu, 150)).trigger('resize');
+      $(window).on('resize', Drupal.debounce(manualToggleMenu, 20)).trigger('resize');
     }
   };
 

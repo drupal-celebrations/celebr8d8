@@ -1,12 +1,22 @@
 .toggle--menu {
   float: right;
+  @include icon(menu);
   background-color: palette(mono, x-light);
+  background-position: 50% 50%;
+  width: 68px;
+  height: 68px;
+
+  &:hover,
+  &:focus {
+    background-color: palette(green);
+  }
 
   @include breakpoint($l, true ) {
     display: none;
   }
 
   &.toggle--menu--open {
+    @include icon(close, false, false);
     background-color: palette(green);
   }
 }

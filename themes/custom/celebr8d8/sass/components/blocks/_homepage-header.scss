@@ -5,6 +5,11 @@
   background: palette(purple) image-url('home-banner.jpg') 50% 50% / cover no-repeat;
   color: palette(green);
 
+  @include breakpoint($l, true) {
+    padding-top: $spacing-unit-vertical * 8;
+    padding-bottom: 170px;
+  }
+
   .field--name-body {
     > span {
       display: block;

@@ -9,6 +9,7 @@ global-js:
   js:
     js/modernizr.custom.min.js: {}
     js/celebr8d8.behavior.menu-toggle.js: {}
+    js/celebr8d8.behavior.logo-swap.js: {}
   dependencies:
     - core/matchmedia
     - core/jquery
