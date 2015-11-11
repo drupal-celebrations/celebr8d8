@@ -28,6 +28,8 @@
   position: relative;
 
   @include breakpoint($l, true) {
+    padding-top: 150px;
+
     &:before {
       content: '';
       position: absolute;
@@ -96,6 +98,26 @@
   @include breakpoint(0 ($l - 1)) {
     .js & {
       display: none;
+    }
+  }
+}
+
+/******************************
+** Main
+******************************/
+.l-main {
+  .not-front & {
+    padding-top: $spacing-unit-vertical;
+    padding-bottom: $spacing-unit-vertical;
+
+    @include breakpoint($m) {
+      padding-top: double($spacing-unit-vertical);
+      padding-bottom: double($spacing-unit-vertical);
+    }
+
+    @include breakpoint($xl, true) {
+      padding-top: triple($spacing-unit-vertical);
+      padding-bottom: triple($spacing-unit-vertical);
     }
   }
 }
