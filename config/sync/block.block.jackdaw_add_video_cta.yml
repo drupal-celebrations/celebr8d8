@@ -1,4 +1,4 @@
-uuid: ea9093d8-ca98-49aa-b237-5563f51c308d
+uuid: bd714834-1d34-4ec2-9600-be2e7e723296
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - block_content
   theme:
-    - celebr8d8
-id: celebr8d8_add_video_cta
-theme: celebr8d8
+    - jackdaw
+id: jackdaw_add_video_cta
+theme: jackdaw
 region: header
-weight: -10
+weight: -11
 provider: null
 plugin: 'block_content:3bfb308f-08fb-4af2-b400-c1ef2b7184dd'
 settings:

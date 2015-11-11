@@ -1,13 +1,13 @@
-uuid: 951c56b3-1491-48fa-9400-cbc3a56676c9
+uuid: 797fd5f4-6790-4708-be09-9f0b444fb99a
 langcode: en
 status: false
 dependencies:
   module:
     - system
   theme:
-    - celebr8d8
-id: celebr8d8_powered
-theme: celebr8d8
+    - stable
+id: stable_powered
+theme: stable
 region: '-1'
 weight: -8
 provider: null

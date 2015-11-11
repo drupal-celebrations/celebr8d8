@@ -1,13 +1,13 @@
-uuid: 0091b014-06b1-4bce-b508-8bf70bcd1011
+uuid: 33620ff3-212b-4872-a800-b32390a4df0f
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - celebr8d8
-id: celebr8d8_messages
-theme: celebr8d8
+    - stable
+id: stable_messages
+theme: stable
 region: highlighted
 weight: 0
 provider: null

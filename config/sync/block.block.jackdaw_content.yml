@@ -1,13 +1,13 @@
-uuid: bca3cf38-206c-490c-9b03-3ee8c7f9b9f6
+uuid: 9583da6c-6860-4fbe-9304-043ccc0ec97e
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - celebr8d8
-id: celebr8d8_content
-theme: celebr8d8
+    - jackdaw
+id: jackdaw_content
+theme: jackdaw
 region: content
 weight: -1
 provider: null

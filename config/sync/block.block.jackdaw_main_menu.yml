@@ -1,4 +1,4 @@
-uuid: cad29b3a-c206-49cb-8308-8bf663566d0e
+uuid: f2bd85eb-a5b7-4980-bc11-17bb33668a91
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - celebr8d8
-id: celebr8d8_main_menu
-theme: celebr8d8
-region: navigation
-weight: -10
+    - jackdaw
+id: jackdaw_main_menu
+theme: jackdaw
+region: header
+weight: 0
 provider: null
 plugin: 'system_menu_block:main'
 settings:

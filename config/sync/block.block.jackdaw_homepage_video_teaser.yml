@@ -1,23 +1,23 @@
-uuid: de63286c-6c56-4528-af3b-59e53a2c8ccd
+uuid: f21241b7-b703-4ecb-9502-2d4e0410ee6c
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:f675d9a4-f4e8-452e-8805-5f15ee1c641e'
+    - 'block_content:basic:61a40fbd-8bf6-4502-8307-07ab6a00014e'
   module:
     - block_content
     - system
   theme:
-    - celebr8d8
-id: celebr8d8_homepage_introduction
-theme: celebr8d8
+    - jackdaw
+id: jackdaw_homepage_video_teaser
+theme: jackdaw
 region: content
-weight: -3
+weight: -2
 provider: null
-plugin: 'block_content:f675d9a4-f4e8-452e-8805-5f15ee1c641e'
+plugin: 'block_content:61a40fbd-8bf6-4502-8307-07ab6a00014e'
 settings:
-  id: 'block_content:f675d9a4-f4e8-452e-8805-5f15ee1c641e'
-  label: 'Homepage Introduction'
+  id: 'block_content:61a40fbd-8bf6-4502-8307-07ab6a00014e'
+  label: 'Video Teaser'
   provider: block_content
   label_display: '0'
   status: true

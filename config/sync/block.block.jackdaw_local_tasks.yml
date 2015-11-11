@@ -1,11 +1,11 @@
-uuid: 70ee35e0-d6e2-4a1c-9b00-ccc1b318d4f4
+uuid: 98fc0ca2-6bdb-4b3a-ac00-b9e953380c3a
 langcode: en
 status: true
 dependencies:
   theme:
-    - celebr8d8
-id: celebr8d8_local_tasks
-theme: celebr8d8
+    - jackdaw
+id: jackdaw_local_tasks
+theme: jackdaw
 region: content
 weight: -6
 provider: null

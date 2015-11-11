@@ -1,4 +1,4 @@
-uuid: c142231d-6ac6-4fbb-b608-8ad5e0e4815b
+uuid: 488d9c90-13f4-4b3d-ba20-32e4e753528a
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,9 @@ dependencies:
   module:
     - block_content
   theme:
-    - celebr8d8
-id: celebr8d8_footer_about
-theme: celebr8d8
+    - jackdaw
+id: jackdaw_footer_about
+theme: jackdaw
 region: footer_first
 weight: -9
 provider: null

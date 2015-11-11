@@ -1,4 +1,4 @@
-uuid: e4ed7cc5-052e-4734-a800-ccfd677c7721
+uuid: b27f3f78-21fa-436e-b300-fca8d6b97391
 langcode: en
 status: true
 dependencies:
@@ -7,10 +7,10 @@ dependencies:
   module:
     - block_content
   theme:
-    - celebr8d8
-id: celebr8d8_footer_legal
-theme: celebr8d8
-region: footer_fourth
+    - stable
+id: stable_footer_legal
+theme: stable
+region: sidebar_first
 weight: -10
 provider: null
 plugin: 'block_content:35dcd24d-58a9-4e8d-ab09-091f235b5d76'

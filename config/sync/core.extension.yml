@@ -44,4 +44,6 @@ module:
 theme:
   classy: 0
   seven: 0
+  stable: 0
+  jackdaw: 0
   celebr8d8: 0

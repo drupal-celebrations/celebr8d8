@@ -1,4 +1,4 @@
-uuid: cad29b3a-c206-49cb-8308-8bf663566d0e
+uuid: 5bcbaebd-a0c3-4ca8-8300-e04deeec4984
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - celebr8d8
-id: celebr8d8_main_menu
-theme: celebr8d8
-region: navigation
-weight: -10
+    - stable
+id: stable_main_menu
+theme: stable
+region: primary_menu
+weight: 0
 provider: null
 plugin: 'system_menu_block:main'
 settings:

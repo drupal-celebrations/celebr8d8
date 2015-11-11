@@ -1,15 +1,15 @@
-uuid: 6b0f8762-4a12-40a6-ab34-523aefa51d53
+uuid: ee9e386e-f757-489a-8200-b96009c6c1ca
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - celebr8d8
-id: celebr8d8_branding
-theme: celebr8d8
+    - jackdaw
+id: jackdaw_branding
+theme: jackdaw
 region: header
-weight: -11
+weight: 0
 provider: null
 plugin: system_branding_block
 settings:

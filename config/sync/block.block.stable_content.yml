@@ -1,13 +1,13 @@
-uuid: bca3cf38-206c-490c-9b03-3ee8c7f9b9f6
+uuid: ab08dfac-2953-483e-ac05-5f4dd813e683
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - celebr8d8
-id: celebr8d8_content
-theme: celebr8d8
+    - stable
+id: stable_content
+theme: stable
 region: content
 weight: -1
 provider: null

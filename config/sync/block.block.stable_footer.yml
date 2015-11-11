@@ -1,4 +1,4 @@
-uuid: 50a95e52-2a31-4f9e-8148-7209d8da5ab6
+uuid: f28e36f9-d280-4c39-9008-08344f7444b8
 langcode: en
 status: false
 dependencies:
@@ -7,9 +7,9 @@ dependencies:
   module:
     - system
   theme:
-    - celebr8d8
-id: celebr8d8_footer
-theme: celebr8d8
+    - stable
+id: stable_footer
+theme: stable
 region: '-1'
 weight: -9
 provider: null

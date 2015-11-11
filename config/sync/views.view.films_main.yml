@@ -220,6 +220,10 @@ display:
         style: false
         row: false
         title: false
+        header: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
       style:
         type: grid
         options:
@@ -239,7 +243,24 @@ display:
       block_description: 'Most Viewed Films'
       allow:
         items_per_page: false
-      title: 'Most Viewed'
+      title: ''
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<h2>Most Viewed</h2>'
+            format: basic_html
+          plugin_id: text
+      use_more: true
+      use_more_always: true
+      use_more_text: '...Show more!'
     cache_metadata:
       max-age: -1
       contexts:

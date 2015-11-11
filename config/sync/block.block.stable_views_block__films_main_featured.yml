@@ -1,4 +1,4 @@
-uuid: 7d7f8dab-b7fc-4060-9f02-2b393ac3a1d3
+uuid: 3e55b416-f948-4ffb-8500-0b42d1823030
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,9 @@ dependencies:
     - system
     - views
   theme:
-    - celebr8d8
-id: celebr8d8_views_block__films_main_featured
-theme: celebr8d8
+    - stable
+id: stable_views_block__films_main_featured
+theme: stable
 region: content
 weight: -4
 provider: null

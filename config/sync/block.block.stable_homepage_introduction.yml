@@ -1,4 +1,4 @@
-uuid: de63286c-6c56-4528-af3b-59e53a2c8ccd
+uuid: 41702f8c-4fa8-45b3-b614-204b6a744a72
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,9 @@ dependencies:
     - block_content
     - system
   theme:
-    - celebr8d8
-id: celebr8d8_homepage_introduction
-theme: celebr8d8
+    - stable
+id: stable_homepage_introduction
+theme: stable
 region: content
 weight: -3
 provider: null

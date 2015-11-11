@@ -1,11 +1,11 @@
-uuid: 106cf363-45ed-4346-a000-e607d2fd8f35
+uuid: ef516e8d-29fc-462f-b900-d16518a5f2f2
 langcode: en
 status: true
 dependencies:
   theme:
-    - celebr8d8
-id: celebr8d8_page_title
-theme: celebr8d8
+    - stable
+id: stable_page_title
+theme: stable
 region: content
 weight: -8
 provider: null
