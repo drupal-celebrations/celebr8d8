@@ -1,32 +1,27 @@
 #block-celebr8d8-add-video-cta {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  float: right;
+  position: relative;
 
   .field--name-body {
     > a {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      width: 150px;
+      padding-left: $spacing-unit-horizontal;
+      padding-right: $spacing-unit-horizontal;
       display: block;
-      height: 100%;
+      height: 68px;
       background-color: palette(pink);
       color: palette(mono, x-light);
       text-decoration: none;
       font-family: 'Bangers';
       @include font-size(20px);
       text-align: center;
-      line-height: 70px;
+      line-height: 68px;
 
       @include breakpoint($xl, true) {
         @include icon(drupal8, false);
         background-color: palette(pink);
         background-position: $spacing-unit-horizontal 50%;
-        padding-left: $spacing-unit-horizontal;
-        width: 240px;
+        padding-left: quadruple($spacing-unit-horizontal);
+        padding-right: double($spacing-unit-horizontal);
       }
 
       &:hover,

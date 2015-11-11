@@ -1,15 +1,22 @@
 /******************************
 ** Regions
 ******************************/
-.layout-container {
+.l-inner__wrapper {
   @extend %constrained;
+  @extend %clearfix;
+
+  .front .l-main & {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
-.path-frontpage .layout-main-wrapper {
-  max-width: none;
-  padding-left: 0;
-  padding-right: 0;
+/******************************
+** Front
+******************************/
 
+.front {
   h1 {
     @extend %element-hidden;
   }
@@ -18,30 +25,32 @@
 /******************************
 ** Header
 ******************************/
-.header {
+.l-header {
   position: relative;
+  z-index: 10;
 
-  .layout-container {
+  .l-inner__wrapper {
     max-width: none;
     padding-left: 0;
-    padding-right: 150px;
+    padding-right: 0;
+  }
 
-    @include breakpoint($xl, true) {
-      padding-right: 240px;
+  .menu--main {
+    @include breakpoint($l, true) {
+      float: right;
     }
   }
 }
 
 .region-header {
-  @extend %clearfix;
-  float: left;
+  position: relative;
+
+  @include breakpoint(0 ($l - 1)) {
+    overflow: hidden;
+  }
 }
 
-.region-primary-menu {
-  float: right;
-}
-
-.site-logo {
+.branding__site-logo {
   float: left;
   padding: 11px;
 
@@ -51,15 +60,26 @@
   }
 }
 
-.site-name {
+.branding__site-name {
   @extend %element-invisible;
+}
+
+/******************************
+** Navigation
+******************************/
+.region-navigation {
+  @include breakpoint(0 ($l - 1)) {
+    .js & {
+      display: none;
+    }
+  }
 }
 
 
 /******************************
 ** Footer
 ******************************/
-.site-footer {
+.l-footer {
   padding-top: $spacing-unit-vertical;
   padding-bottom: $spacing-unit-vertical;
 

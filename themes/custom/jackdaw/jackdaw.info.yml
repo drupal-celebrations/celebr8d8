@@ -1,11 +1,8 @@
-name: Celebr8 D8
+name: Jackdaw
 type: theme
-description: The theme for the Celebr8 D8 site
+description: Sleek, efficient, and clever - Jackdaw is a base theme that bridges the gap between the sparseness of Stable and the hellhole of Classy.
 core: 8.x
-base theme: jackdaw
-libraries:
-  - celebr8d8/global-css
-  - celebr8d8/global-js
+base theme: stable
 regions:
   header: Header
   navigation: 'Navigation'

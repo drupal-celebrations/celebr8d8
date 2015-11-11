@@ -8,3 +8,10 @@ global-css:
 global-js:
   js:
     js/modernizr.custom.min.js: {}
+    js/celebr8d8.behavior.menu-toggle.js: {}
+  dependencies:
+    - core/matchmedia
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
+    - core/drupal.debounce

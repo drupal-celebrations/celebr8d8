@@ -12,7 +12,7 @@
     padding-bottom: quadruple($spacing-unit-vertical);
   }
 
-  .field--name-body {
+  .block__content {
     @extend %constrained;
     @extend %clearfix;
   }

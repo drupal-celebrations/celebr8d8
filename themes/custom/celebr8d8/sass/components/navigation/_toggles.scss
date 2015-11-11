@@ -1,0 +1,12 @@
+.toggle--menu {
+  float: right;
+  background-color: palette(mono, x-light);
+
+  @include breakpoint($l, true ) {
+    display: none;
+  }
+
+  &.toggle--menu--open {
+    background-color: palette(green);
+  }
+}
