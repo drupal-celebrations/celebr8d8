@@ -1,57 +1,31 @@
-/**
- * Default, secondary button styles (@see function modifiers below).
- *
- * Inspired by csswizardry.com/beautons
- *
- *  1. Allow us to better style box model properties.
- *  2. Line different sized buttons up a little nicer.
- *  3. Stop buttons wrapping and looking broken.
- *  4. Make buttons inherit font styles.
- *  5. Force all elements using beautons to appear clickable.
- *  6. Normalise box model styles.
- *  7. If the button’s text is 1em, and the button is (3 * font-size) tall, then
- *     there is 1em of space above and below that text. We therefore apply 1em
- *     of space to the left and right, as padding, to keep consistent spacing.
- *  8. Basic cosmetics for default buttons. Change or override at will.
- *  9. Fixes odd inner spacing in IE7.
- * 10. Don’t allow buttons to have underlines; it kinda ruins the illusion.
- * 11. Prevents from inheriting default anchor styles.
- */
 .button {
-  display: inline-block;          /* [1] */
-  vertical-align: middle;         /* [2] */
-  white-space: nowrap;            /* [3] */
-  font-family: 'Bangers';         /* [4] */
-  @include font-size(20px);       /* [4] */
-  cursor: pointer;                /* [5] */
-  margin: 0;                      /* [6] */
-  padding-top: 0;                 /* [6] */
-  padding-bottom: 0;              /* [6] */
-  line-height: 2.75;              /* [7] */
-  height: 3em;                  /* [7] */
-  padding-right: 1.5em;           /* [7] */
-  padding-left: 1.5em;            /* [7] */
-  background-color: transparent;  /* [8] */
-  border-radius: 0;               /* [8] */
-  overflow: visible;              /* [9] */
-  border: 2px solid palette(mono, dark);
-  border-bottom-width: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-family: 'Bangers';
+  @include font-size(20px);
+  cursor: pointer;
+  margin: 0;
+  padding: 0 1.5em;
+  line-height: 2.2;
+  height: 2.2em;
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: none;
+  background-color: palette(purple);
+  border: 0;
 
-
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  backface-visibility: hidden;
-  position: relative;
-  transition-property: color;
-  transition-duration: 0.3s;
+  @include breakpoint($s, true) {
+    @include font-size(26px);
+  }
 
   &,
   &:hover,
   &:active,
   &:focus,
   &:visited {
-    text-decoration: none;        /* [10] */
-    color: palette(mono, dark);                  /* [11] */
+    text-decoration: none;
+    color: palette(mono, x-light);
   }
   &:hover {
   }
@@ -67,8 +41,7 @@
   &:hover,
   &:focus,
   &:active {
-    color: palette(purple);
-    background-color: palette(mono, dark);
+    background-color: palette(purple, light);
   }
 }
 
@@ -132,15 +105,21 @@
 
 }
 
-.button--contrast {
-  border-color: palette(mono, x-light);
-  color: palette(mono, x-light);
-}
-
 .button--video {
   position: relative;
   padding-right: 3em;
+  line-height: 2.75;
+  height: 3em;
   z-index: 2;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  transition-property: color;
+  transition-duration: 0.3s;
+  background-color: transparent;
+  border: 2px solid palette(mono, dark);
+  border-bottom-width: 8px;
+  @include font-size(20px);
 
   &:before,
   &:after {
@@ -172,6 +151,7 @@
   &:focus,
   &:active {
     background-color: transparent;
+    color: palette(purple);
 
     &:before {
       transform: scaleX(1);
@@ -181,6 +161,11 @@
       @include icon(single-play_active, false, false);
     }
   }
+}
+
+.button--contrast {
+  border-color: palette(mono, x-light);
+  color: palette(mono, x-light);
 }
 
 /**

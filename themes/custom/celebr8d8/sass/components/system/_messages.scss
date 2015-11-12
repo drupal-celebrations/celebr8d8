@@ -1,0 +1,21 @@
+$messages: (status, palette(positive)),
+        (warning, palette(warning)),
+        (error, palette(negative));
+
+.messages {
+  position: relative;
+  padding: 1.15em 1.5em;
+  margin-top: $spacing-unit-vertical;
+  margin-bottom: $spacing-unit-vertical;
+  border: none;
+  border-left-width: 5px;
+  border-left-style: solid;
+  background: palette(mono, x-light);
+
+  @each $type, $color in $messages {
+    &.#{$type},
+    &.messages--#{$type} {
+      border-left-color: $color;
+    }
+  }
+}

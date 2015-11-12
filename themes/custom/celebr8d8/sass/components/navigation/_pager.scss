@@ -1,5 +1,12 @@
 .pager {
-  font-size: 0;
+  .pager__items {
+    padding-left: 0;
+    font-size: 0;
+    position: relative;
+    @include breakpoint(0 $xs) {
+      padding-top: 35px;
+    }
+  }
 
   li {
     display: inline-block;
@@ -10,30 +17,36 @@
     font-weight: 700;
     vertical-align: top;
 
-    &.pager__item--current {
-      padding: 0.25em 0.65em;
-      border: 1px solid palette(purple);
-      background-color: palette(purple);
-      color: palette(mono, x-light);
-    }
-
     a {
       display: block;
       padding: 0.25em 0.65em;
       border: 1px solid palette(purple);
+      min-width: 2em;
+      text-align: center;
+      text-decoration: none;
 
       &:hover,
       &:focus {
         background-color: palette(purple, light);
-        border-color: palette(purple, light);
+        color: palette(mono, x-light);
+      }
+    }
+
+    &.is-active {
+      a {
+        background-color: palette(purple);
         color: palette(mono, x-light);
       }
     }
 
     &.pager__item--first,
     &.pager__item--last {
-      a {
+      @include breakpoint(0 $xs) {
+        position: absolute;
+        top: 0;
+      }
 
+      a {
         border: none;
         &:hover,
         &:focus {
@@ -44,17 +57,25 @@
     }
 
     &.pager__item--first {
+      @include breakpoint(0 $xs) {
+        left: 0;
+      }
+
       a {
-//        @include icon(pager-first, false, true);
-        padding-left: 30px;
+        @include icon(double-arrow-left, false, true);
+        padding-left: $spacing-unit-horizontal;
         background-position: 0 50%;
       }
     }
 
     &.pager__item--last {
+      @include breakpoint(0 $xs) {
+        right: 0;
+      }
+
       a {
-//        @include icon(pager-last, false, true);
-        padding-right: 30px;
+        @include icon(double-arrow-right, false, true);
+        padding-right: $spacing-unit-horizontal;
         background-position: 100% 50%;
       }
     }
@@ -62,39 +83,43 @@
     &.pager__item--previous,
     &.pager__item--next {
       padding: 0;
+      overflow: hidden;
 
       a {
-        height: 37px;
-        width: 33px;
+        width: 2em;
+        text-indent: -9999px;
 
         &:hover,
         &:focus {
-          border-color: palette(purple, light);
           background-color: palette(purple, light);
         }
       }
     }
 
     &.pager__item--previous {
+      margin-left: 0;
+
       a {
-//        @include icon(pager-prev, false, true);
+        @include icon(small-arrow-left, false, true);
         background-position: 50% 50%;
 
         &:hover,
         &:focus {
-//          @include icon(pager-prev_hover, false, false);
+          @include icon(small-arrow-left_active, false, false);
         }
       }
     }
 
     &.pager__item--next {
+      margin-right: 0;
+
       a {
-//        @include icon(pager-next, false, true);
+        @include icon(small-arrow-right, false, true);
         background-position: 50% 50%;
 
         &:hover,
         &:focus {
-//          @include icon(pager-next_hover, false, false);
+          @include icon(small-arrow-right_active, false, false);
         }
       }
     }

@@ -1,6 +1,6 @@
 .form-select {
   background-color: palette(mono, x-light);
-  border: 1px solid palette(purple);
+  border: 2px solid palette(purple);
   color: palette(purple, light);
   @include font-size(16px);
   font-weight: 700;
@@ -13,11 +13,11 @@
 /* Select */
 div.selector {
   background-color: palette(mono, x-light);
-  border: 1px solid palette(purple);
+  border: 2px solid palette(purple);
   color: palette(purple, light);
   @include font-size(16px);
   font-weight: 700;
-  padding: 0 0 0 10px;
+  padding: 0 0 0 20px;
   position: relative;
   overflow: hidden;
   line-height: 53px;
@@ -48,6 +48,8 @@ div.selector {
     width: 100% !important;
     padding-right: 53px;
     cursor: pointer;
+    @include icon(small-arrow-down, false);
+    background-position: 93.5% 50%;
 //    background: transparent image-url('selector-arrows.png') 100% 0 no-repeat;
   }
 

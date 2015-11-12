@@ -20,3 +20,32 @@
     background-color: palette(green);
   }
 }
+
+.toggle--filters {
+  display: block;
+  padding: 0.75em;
+  background-color: palette(purple);
+  text-align: center;
+  text-decoration: none;
+  @include font-size(20px);
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  color: palette(mono, x-light);
+
+  @include breakpoint($s, true) {
+    display: none;
+  }
+
+  span {
+    display: inline-block;
+    padding-right: $spacing-unit-horizontal;
+    @include icon(closed-arrow, false);
+    background-position: 100% 50%;
+  }
+
+  &.toggle--filters--open {
+    span {
+      @include icon(open-arrow, false, false);
+    }
+  }
+}

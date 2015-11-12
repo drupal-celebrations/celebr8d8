@@ -18,3 +18,10 @@ global-js:
     - core/drupal
     - core/jquery.once
     - core/drupal.debounce
+
+home-js:
+  js:
+    js/celebr8d8.behavior.home.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once

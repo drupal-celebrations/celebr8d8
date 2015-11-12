@@ -1,16 +1,12 @@
 .view--films-main {
-  @extend %constrained;
-
-  .view__content {
-    padding-top: $spacing-unit-vertical;
-    padding-bottom: $spacing-unit-vertical;
-  }
 
   .views-view-grid {
     @extend %clearfix;
   }
 
   .views-row {
+    margin-bottom: $spacing-unit-vertical;
+
     @include breakpoint($s ($m - 1)) {
       @include float-span(4);
 
@@ -28,95 +24,58 @@
     }
   }
 
-  &.view-display--featured {
-    position: relative;
+  .view__filters {
+    padding-top: $spacing-unit-vertical;
     padding-bottom: $spacing-unit-vertical;
+    background-color: palette(mono, mid-light);
 
-    .view__header {
-      position: relative;
-      padding: 0 10px 3px 3px;
-      @extend %clearfix;
-      background-color: palette(purple);
+    @include breakpoint(0 ($s - 1)) {
+      .js & {
+        display: none;
+      }
+    }
 
-      @include breakpoint(0 $xs) {
-        margin-left: -$spacing-unit-horizontal;
-        margin-right: -$spacing-unit-horizontal;
+    @include breakpoint($m, true) {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    .form--inline {
+      @extend %constrained;
+    }
+
+    .form-item {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: $spacing-unit-vertical;
+
+      @include breakpoint($s, true) {
+        width: 335px;
+        max-width: 47%;
+        margin-right: 6%;
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
       }
 
-      @include breakpoint($xs) {
-        padding-right: 30px;
-      }
-
-      h2 {
-        margin-top: 0;
-        margin-bottom: 0;
-        float: left;
-        padding: 0.75em 1.25em;
-        background-color: palette(mono, light);
-        @include font-size(20px);
-        color: palette(purple);
-        letter-spacing: -0.06em;
-
-        @include breakpoint($xs, true) {
-          @include font-size(26px);
+      @include breakpoint($l, true) {
+        &:nth-child(2n) {
+          margin-right: 6%;
         }
       }
     }
 
-    .views-row {
-      @include breakpoint($xl, true) {
-        @include float-span(4);
-
-        &:nth-child(3n) {
-          @include float-span(4, 'last');
-        }
-      }
-    }
-
-    .more-link {
-      float: right;
-
-      a {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        color: palette(mono, x-light);
-        text-decoration: none;
-        display: block;
-        font-family: 'Bangers';
-        padding-right: double($spacing-unit-horizontal) + 7px;
-        padding-left: halve($spacing-unit-horizontal);
-        @include font-size(20px);
-        @include icon(block-arrow-right, false);
-        background-position: 93% 50%;
-        line-height: 2.75em;
-
-        @include breakpoint($xs, true) {
-          line-height: 3.5em;
-          padding-right: triple($spacing-unit-horizontal);
-          padding-left: $spacing-unit-horizontal;
-        }
-
-        &:hover,
-        &:focus {
-          @include icon(block-arrow-right_active, false, false);
-          color: palette(purple);
-          background-color: palette(mono, x-light);
-        }
-      }
+    .form-submit {
+      margin-top: 1.65em;
     }
   }
 
-  &.view-display--all {
-    .views-row {
-      @include breakpoint($xl, true) {
-        @include float-span(3);
+  .pager {
+    text-align: center;
 
-        &:nth-child(4n) {
-          @include float-span(3, 'last');
-        }
-      }
+    @include breakpoint($xs, true) {
+      text-align: right;
     }
   }
 }

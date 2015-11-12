@@ -20,8 +20,6 @@
           oldLogo = compactLogo,
           src = $logo.attr('src');
 
-        console.log(compact);
-
         if (compact) {
           newLogo = compactLogo;
           oldLogo = plainLogo;
@@ -33,15 +31,8 @@
         }
       }
 
-      // Initial width check.
+      // Width check.
       $(window).on('resize', Drupal.debounce(switchLogo, 150)).trigger('resize');
-      //switchLogo(matchMedia('(max-width: 960px)').matches);
-      //
-      //// Change of window size check.
-      //$(window).on('debouncedresize', function () {
-      //
-      //  switchLogo(matchMedia('(max-width: 960)').matches);
-      //});
     }
   };
 
