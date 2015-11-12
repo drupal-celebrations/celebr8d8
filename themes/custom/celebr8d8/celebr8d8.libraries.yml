@@ -7,9 +7,11 @@ global-css:
 
 global-js:
   js:
+    libraries/jquery.uniform/jquery.uniform.min.js: {}
     js/modernizr.custom.min.js: {}
-    js/celebr8d8.behavior.menu-toggle.js: {}
-    js/celebr8d8.behavior.logo-swap.js: {}
+    js/celebr8d8.behavior.menu-toggle.min.js: {}
+    js/celebr8d8.behavior.logo-swap.min.js: {}
+    js/celebr8d8.behavior.uniform.min.js: {}
   dependencies:
     - core/matchmedia
     - core/jquery

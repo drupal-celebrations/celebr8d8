@@ -5,14 +5,14 @@ node_modules
 .sass-cache
 
 # We don't want generated CSS and images in git.
-css
-images
-icons
+# css
+# images
+# icons
 !assets/icons
 !assets/images
 assets/icons/minified
-libraries
-js/*.min.js
+# libraries
+# js/*.min.js
 !js/modernizr.custom.min.js
 
 # OS garbage, Editors, IDEs, etc

@@ -1,6 +1,6 @@
 /**
  * @file
- * Responsive navigation toggle.
+ * Logo swap.
  *
  */
 (function ($, Drupal) {
