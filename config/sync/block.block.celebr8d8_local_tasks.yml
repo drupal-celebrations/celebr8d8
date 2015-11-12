@@ -7,7 +7,7 @@ dependencies:
 id: celebr8d8_local_tasks
 theme: celebr8d8
 region: content
-weight: -6
+weight: -8
 provider: null
 plugin: local_tasks_block
 settings:

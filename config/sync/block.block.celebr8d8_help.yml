@@ -9,7 +9,7 @@ dependencies:
 id: celebr8d8_help
 theme: celebr8d8
 region: content
-weight: -9
+weight: -10
 provider: null
 plugin: help_block
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: celebr8d8_homepage_video_teaser
 theme: celebr8d8
 region: content
-weight: -2
+weight: -5
 provider: null
 plugin: 'block_content:61a40fbd-8bf6-4502-8307-07ab6a00014e'
 settings:

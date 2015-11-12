@@ -9,7 +9,7 @@ dependencies:
 id: celebr8d8_content
 theme: celebr8d8
 region: content
-weight: -1
+weight: -4
 provider: null
 plugin: system_main_block
 settings:

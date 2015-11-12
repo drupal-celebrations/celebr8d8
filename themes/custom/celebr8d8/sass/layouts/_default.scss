@@ -5,6 +5,7 @@
   @extend %constrained;
   @extend %clearfix;
 
+  .front .l-featured-top &,
   .front .l-main & {
     max-width: none;
     padding-left: 0;
@@ -28,8 +29,6 @@
   position: relative;
 
   @include breakpoint($l, true) {
-    padding-top: 150px;
-
     &:before {
       content: '';
       position: absolute;

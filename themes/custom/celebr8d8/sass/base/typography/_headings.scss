@@ -14,7 +14,19 @@ h6, .zeta {
   }
 }
 
-h1, .alpha {}
+h1, .alpha {
+  margin-top: 0;
+  margin-bottom: 0;
+  @include font-size(34px);
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  line-height: 1;
+  color: palette(mono, x-light);
+
+  @include breakpoint($m, true) {
+    @include font-size(70px);
+  }
+}
 h2, .beta {}
 h3, .gamma {}
 h4, .delta {}

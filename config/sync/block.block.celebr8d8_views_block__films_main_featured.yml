@@ -12,7 +12,7 @@ dependencies:
 id: celebr8d8_views_block__films_main_featured
 theme: celebr8d8
 region: content
-weight: -4
+weight: -7
 provider: null
 plugin: 'views_block:films_main-featured'
 settings:

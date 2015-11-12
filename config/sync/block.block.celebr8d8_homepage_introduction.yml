@@ -12,7 +12,7 @@ dependencies:
 id: celebr8d8_homepage_introduction
 theme: celebr8d8
 region: content
-weight: -3
+weight: -6
 provider: null
 plugin: 'block_content:f675d9a4-f4e8-452e-8805-5f15ee1c641e'
 settings:

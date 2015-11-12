@@ -1,6 +1,7 @@
 ul.tabs {
   @extend %list-nostyle;
   @extend %clearfix;
+  margin-bottom: $spacing-unit-vertical;
 
   &.tabs--primary {
     margin-bottom: 1em;

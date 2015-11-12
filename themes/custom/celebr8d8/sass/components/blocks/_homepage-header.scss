@@ -3,10 +3,8 @@
   padding-top: double($spacing-unit-vertical);
   padding-bottom: double($spacing-unit-vertical);
   background: palette(purple) image-url('home-banner.jpg') 50% 50% / cover no-repeat;
-  color: palette(green);
 
   @include breakpoint($l, true) {
-    margin-top: -150px;
     padding-top: $spacing-unit-vertical * 8;
     padding-bottom: 170px;
   }
@@ -14,15 +12,8 @@
   .field--name-body {
     > span {
       display: block;
-      @include font-size(34px);
-      font-weight: 700;
-      letter-spacing: -0.06em;
-      line-height: 1;
-
-      @include breakpoint($m, true) {
-        @include font-size(70px);
-        line-height: 1;
-      }
+      @extend .alpha;
+      color: palette(green);
 
       > span {
         color: palette(mono, x-light);
