@@ -1,0 +1,35 @@
+uuid: 00c161e5-fdc9-484b-bd1d-29f7fee744ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.celebr8_drupal8_contact
+id: contact_message.celebr8_drupal8_contact.default
+targetEntityType: contact_message
+bundle: celebr8_drupal8_contact
+mode: default
+content:
+  mail:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  message:
+    type: string_textarea
+    weight: 3
+    settings:
+      rows: 12
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  subject:
+    type: string_textfield
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  copy: true

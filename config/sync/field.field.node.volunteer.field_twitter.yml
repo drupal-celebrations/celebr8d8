@@ -1,0 +1,19 @@
+uuid: e104e849-f801-490a-b200-e57a14c5078a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_twitter
+    - node.type.volunteer
+id: node.volunteer.field_twitter
+field_name: field_twitter
+entity_type: node
+bundle: volunteer
+label: Twitter
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
