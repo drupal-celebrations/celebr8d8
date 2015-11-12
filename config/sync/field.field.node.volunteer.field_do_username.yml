@@ -1,0 +1,19 @@
+uuid: 0964f47e-7a8b-4dba-9604-4a94f0474f45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_do_username
+    - node.type.volunteer
+id: node.volunteer.field_do_username
+field_name: field_do_username
+entity_type: node
+bundle: volunteer
+label: 'DO username'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

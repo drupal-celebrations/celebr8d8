@@ -716,12 +716,7 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 $settings['install_profile'] = 'standard';
 
 // Define a config sync directory outside the document root.
-if (isset($_ENV['PLATFORM_APP_DIR'])) {
-  $config_directories[CONFIG_SYNC_DIRECTORY] = $_ENV['PLATFORM_APP_DIR'] . '/config/sync';
-}
-else {
-  $config_directories[CONFIG_SYNC_DIRECTORY] = 'config/sync';
-}
+$config_directories[CONFIG_SYNC_DIRECTORY] = 'config/sync';
 
 // Set trusted hosts based on real Platform.sh routes.
 if (isset($_ENV['PLATFORM_ROUTES'])) {

@@ -1,0 +1,21 @@
+uuid: c28f32e5-062f-4809-9449-73db05346e0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prof
+    - node.type.volunteer
+  module:
+    - text
+id: node.volunteer.field_prof
+field_name: field_prof
+entity_type: node
+bundle: volunteer
+label: Profile
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

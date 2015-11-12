@@ -1,0 +1,25 @@
+uuid: 52e8809a-718b-490e-ba5e-9497075147be
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.volunteer.field_do_username
+    - field.field.node.volunteer.field_photo
+    - field.field.node.volunteer.field_prof
+    - field.field.node.volunteer.field_twitter
+    - node.type.volunteer
+  module:
+    - user
+id: node.volunteer.teaser
+targetEntityType: node
+bundle: volunteer
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_do_username: true
+  field_photo: true
+  field_prof: true
+  field_twitter: true

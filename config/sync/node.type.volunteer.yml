@@ -1,0 +1,17 @@
+uuid: 81f64e48-b845-4a50-b325-379073a8edd6
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Volunteer
+type: volunteer
+description: 'Celebr8 Drupal8 contributors.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
