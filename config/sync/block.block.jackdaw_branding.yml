@@ -1,0 +1,23 @@
+uuid: ee9e386e-f757-489a-8200-b96009c6c1ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - jackdaw
+id: jackdaw_branding
+theme: jackdaw
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

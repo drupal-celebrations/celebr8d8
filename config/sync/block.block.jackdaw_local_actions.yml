@@ -1,0 +1,18 @@
+uuid: a4d46459-4f35-4f57-851a-26b046adb32f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - jackdaw
+id: jackdaw_local_actions
+theme: jackdaw
+region: content
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

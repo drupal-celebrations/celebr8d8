@@ -1,0 +1,31 @@
+uuid: 3b3170b0-40ed-4277-9600-e1f6268f3214
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:237ef713-2464-416e-a300-a9f44f4682c6'
+  module:
+    - block_content
+    - system
+  theme:
+    - celebr8d8
+id: celebr8d8_homepage_header
+theme: celebr8d8
+region: featured_top
+weight: -9
+provider: null
+plugin: 'block_content:237ef713-2464-416e-a300-a9f44f4682c6'
+settings:
+  id: 'block_content:237ef713-2464-416e-a300-a9f44f4682c6'
+  label: 'Homepage Header'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

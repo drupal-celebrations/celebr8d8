@@ -1,0 +1,81 @@
+.view--films-main {
+
+  .views-view-grid {
+    @extend %clearfix;
+  }
+
+  .views-row {
+    margin-bottom: $spacing-unit-vertical;
+
+    @include breakpoint($s ($m - 1)) {
+      @include float-span(4);
+
+      &:nth-child(2n) {
+        @include float-span(4, 'last');
+      }
+    }
+
+    @include breakpoint($m ($xl - 1)) {
+      @include float-span(4);
+
+      &:nth-child(3n) {
+        @include float-span(4, 'last');
+      }
+    }
+  }
+
+  .view__filters {
+    padding-top: $spacing-unit-vertical;
+    padding-bottom: $spacing-unit-vertical;
+    background-color: palette(mono, mid-light);
+
+    @include breakpoint(0 ($s - 1)) {
+      .js & {
+        display: none;
+      }
+    }
+
+    @include breakpoint($m, true) {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    .form--inline {
+      @extend %constrained;
+    }
+
+    .form-item {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: $spacing-unit-vertical;
+
+      @include breakpoint($s, true) {
+        width: 335px;
+        max-width: 47%;
+        margin-right: 6%;
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
+
+      @include breakpoint($l, true) {
+        &:nth-child(2n) {
+          margin-right: 6%;
+        }
+      }
+    }
+
+    .form-submit {
+      margin-top: 1.65em;
+    }
+  }
+
+  .pager {
+    text-align: center;
+
+    @include breakpoint($xs, true) {
+      text-align: right;
+    }
+  }
+}

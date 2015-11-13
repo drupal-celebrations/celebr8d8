@@ -1,0 +1,30 @@
+uuid: 3e55b416-f948-4ffb-8500-0b42d1823030
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.films_main
+  module:
+    - system
+    - views
+  theme:
+    - stable
+id: stable_views_block__films_main_featured
+theme: stable
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:films_main-featured'
+settings:
+  id: 'views_block:films_main-featured'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,5 @@
+// Defines a function to derive a color given a palette and tone.
+// @see http://erskinedesign.com/blog/friendlier-colour-names-sass-maps/
+@function palette($palette, $tone: 'base') {
+  @return map-get(map-get($palettes, $palette), $tone);
+}

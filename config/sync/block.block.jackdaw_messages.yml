@@ -1,0 +1,20 @@
+uuid: 8ddefcfd-efd4-439a-a600-b26a44e98cc2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - jackdaw
+id: jackdaw_messages
+theme: jackdaw
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

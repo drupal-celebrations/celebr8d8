@@ -1,0 +1,40 @@
+# Ignore the node modules folder (created by 'npm install').
+node_modules
+
+# We absolutely don't want to have the .sass-cache in git.
+.sass-cache
+
+# We don't want generated CSS and images in git.
+# css
+# images
+# icons
+!assets/icons
+!assets/images
+assets/icons/minified
+# libraries
+# js/*.min.js
+!js/modernizr.custom.min.js
+
+# OS garbage, Editors, IDEs, etc
+.DS_Store
+.svn
+code_coverage
+*~
+*.swp
+coverage
+.coverage
+nbproject
+.nbproject
+build
+.build
+.project
+project
+*.project
+.buildpath
+*.db
+*.tmproj
+*.sublime-project
+*.sublime-workspace
+.idea
+*.idea/*
+atlassian-ide-plugin.xml

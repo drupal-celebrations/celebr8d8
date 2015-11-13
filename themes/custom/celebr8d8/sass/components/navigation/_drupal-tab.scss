@@ -1,0 +1,58 @@
+ul.tabs {
+  @extend %list-nostyle;
+  @extend %clearfix;
+  margin-bottom: $spacing-unit-vertical;
+
+  &.tabs--primary {
+    margin-bottom: 1em;
+
+    @include breakpoint ($xs, true) {
+      border-bottom: 5px solid palette(mono, x-light);
+    }
+  }
+
+  li {
+    margin-bottom: 0.5em;
+    margin-right: 0;
+    float: none;
+    text-align: center;
+
+    @include breakpoint ($xs, true) {
+      float: left;
+      margin-right: 0.5em;
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+      margin-right: 0;
+    }
+
+    a {
+      display: block;
+      padding: 0.25em 1em 0.5em 1em;
+      border-top: 5px solid palette(purple);
+      background-color: palette(purple);
+      color: palette(mono, x-light);
+      text-decoration: none;
+      font-weight: 700;
+
+      @include breakpoint ($xs, true) {
+        padding: 0.25em 1em 0.5em;
+      }
+
+      &:hover,
+      &:focus {
+        border-top-color: palette(purple, light);
+        background-color: palette(purple, light);
+      }
+    }
+
+    &.is-active {
+      a {
+        background-color: palette(mono, x-light);
+        color: palette(mono, dark);
+      }
+    }
+  }
+}

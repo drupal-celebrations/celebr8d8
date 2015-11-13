@@ -76,10 +76,10 @@ display:
         type: grid
         options:
           uses_fields: false
-          columns: 4
-          automatic_width: true
+          columns: 1
+          automatic_width: false
           alignment: horizontal
-          col_class_default: true
+          col_class_default: false
           col_class_custom: ''
           row_class_default: true
           row_class_custom: ''
@@ -312,16 +312,20 @@ display:
         style: false
         row: false
         title: false
-        filters: false
+        header: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        filter: false
         filter_groups: false
       style:
         type: grid
         options:
           uses_fields: false
-          columns: 3
-          automatic_width: true
+          columns: 1
+          automatic_width: false
           alignment: horizontal
-          col_class_default: true
+          col_class_default: false
           col_class_custom: ''
           row_class_default: true
           row_class_custom: ''
@@ -333,7 +337,21 @@ display:
       block_description: 'Most Viewed Films'
       allow:
         items_per_page: false
-      title: 'Most Viewed'
+      title: ''
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<h2>Most Viewed</h2>'
+            format: basic_html
+          plugin_id: text
       filters:
         status:
           value: true
@@ -360,6 +378,9 @@ display:
         operator: AND
         groups:
           1: AND
+      use_more: true
+      use_more_always: true
+      use_more_text: '...Show more!'
     cache_metadata:
       max-age: -1
       contexts:

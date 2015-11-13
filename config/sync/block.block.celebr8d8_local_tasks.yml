@@ -1,0 +1,20 @@
+uuid: 70ee35e0-d6e2-4a1c-9b00-ccc1b318d4f4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - celebr8d8
+id: celebr8d8_local_tasks
+theme: celebr8d8
+region: content
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

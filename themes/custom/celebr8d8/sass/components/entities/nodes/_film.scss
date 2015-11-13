@@ -1,0 +1,50 @@
+.node--type-film {
+  &.node--view-mode-teaser {
+    .field--name-field-youtube-url {
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    .field--name-field-your-name {
+      font-weight: 700;
+    }
+
+    .field--name-field-country {
+      color: palette(mono);
+    }
+
+    .field--name-field-drupal-org-username {
+    }
+
+    .field--name-field-twitter-account {
+    }
+
+    .node__main {
+      position: relative;
+      background-color: palette(mono, x-light);
+      padding: 1em;
+      border-bottom: 1px solid palette(pink);
+
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 40%;
+        height: 0;
+        border-top: 4px solid palette(pink);
+      }
+
+      > h2 {
+        margin-top: 0;
+        @include font-size(20px);
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.l-featured-top {
+  @include breakpoint($l, true) {
+    margin-top: -150px;
+  }
+
+  .front & {
+    .l-wrapper__inner {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .not-front & {
+    padding-top: $spacing-unit-vertical;
+    padding-bottom: $spacing-unit-vertical;
+    background-color: palette(purple);
+
+    @include breakpoint($m, true) {
+      padding-top: double($spacing-unit-vertical);
+      padding-bottom: double($spacing-unit-vertical);
+    }
+
+    @include breakpoint($l, true) {
+      padding-top: $spacing-unit-vertical * 6;
+      padding-bottom: triple($spacing-unit-vertical);
+    }
+  }
+}

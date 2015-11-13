@@ -1,0 +1,28 @@
+@mixin icon($name, $standalone: true, $primary: true) {
+  $icon-width: image-width('icons/png/#{$name}.png');
+  $icon-height: image-height('icons/png/#{$name}.png');
+
+  background-image: url('../icons/png/#{$name}.png');
+  .svg & {
+    background-image: url('../icons/svg/#{$name}.svg');
+  }
+
+  @if $primary {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: $icon-width $icon-height;
+
+    @if $standalone {
+      width: $icon-width;
+      height: $icon-height;
+      display: block;
+      text-indent: -9999px;
+      overflow: hidden;
+      background-position: 0 0;
+    }
+
+    @else {
+      background-position: 0 50%;
+    }
+  }
+}

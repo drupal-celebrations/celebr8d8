@@ -1,0 +1,25 @@
+uuid: c142231d-6ac6-4fbb-b608-8ad5e0e4815b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:79961a2a-036e-4a71-8b06-6cae04f87398'
+  module:
+    - block_content
+  theme:
+    - celebr8d8
+id: celebr8d8_footer_about
+theme: celebr8d8
+region: footer_first
+weight: -9
+provider: null
+plugin: 'block_content:79961a2a-036e-4a71-8b06-6cae04f87398'
+settings:
+  id: 'block_content:79961a2a-036e-4a71-8b06-6cae04f87398'
+  label: About
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

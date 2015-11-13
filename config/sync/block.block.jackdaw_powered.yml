@@ -1,0 +1,20 @@
+uuid: 22d47561-955e-4227-9f19-25c124fcc771
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - jackdaw
+id: jackdaw_powered
+theme: jackdaw
+region: '-1'
+weight: -8
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

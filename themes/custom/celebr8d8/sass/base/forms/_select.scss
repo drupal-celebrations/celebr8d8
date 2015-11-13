@@ -1,0 +1,68 @@
+.form-select {
+  background-color: palette(mono, x-light);
+  border: 2px solid palette(purple);
+  color: palette(purple, light);
+  @include font-size(16px);
+  font-weight: 700;
+}
+
+/***************************
+** Start of Uniform styles
+***************************/
+
+/* Select */
+div.selector {
+  background-color: palette(mono, x-light);
+  border: 2px solid palette(purple);
+  color: palette(purple, light);
+  @include font-size(16px);
+  font-weight: 700;
+  padding: 0 0 0 20px;
+  position: relative;
+  overflow: hidden;
+  line-height: 53px;
+  height: 53px;
+  box-sizing: content-box;
+  width: auto !important;
+
+  select {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    border: none;
+    background: none;
+    position: absolute;
+    height: 53px;
+    top: 2px;
+    left: 0px;
+    width: 100%;
+  }
+
+  span {
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 53px;
+    height: 53px;
+    width: 100% !important;
+    padding-right: 53px;
+    cursor: pointer;
+    @include icon(small-arrow-down, false);
+    background-position: 93.5% 50%;
+//    background: transparent image-url('selector-arrows.png') 100% 0 no-repeat;
+  }
+
+  &.focus {
+    border-color: palette(pink);
+  }
+
+  &.disabled {
+    background-color: palette(mono, light);
+    color: palette(mono, mid-light);
+
+    span {
+      background-position: 100% -45px;
+    }
+  }
+}

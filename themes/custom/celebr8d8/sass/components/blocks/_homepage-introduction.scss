@@ -1,0 +1,58 @@
+#block-celebr8d8-homepage-introduction {
+  @extend %homepage-block;
+  background: palette(green) image-url('squiggles.png') 50% 50% / cover no-repeat;
+  color: palette(purple);
+
+  .field--name-body {
+    > a:first-child {
+      @include breakpoint($l ($xl - 1)) {
+        @include float-span(7, 'last');
+        clear: both;
+      }
+
+      @include breakpoint($xl, true) {
+        @include float-span(8, 'last');
+        clear: both;
+      }
+    }
+
+    > div:first-of-type {
+      @include font-size(28px);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.06em;
+
+      @include breakpoint(0 ($l - 1)) {
+        margin-bottom: double($spacing-unit-vertical);
+      }
+
+      @include breakpoint($m, true) {
+        @include font-size(40px);
+        line-height: 1;
+      }
+
+      @include breakpoint($l ($xl - 1)) {
+        @include float-span(5);
+        padding-right: $spacing-unit-horizontal;
+      }
+
+      @include breakpoint($xl, true) {
+        @include float-span(4);
+        padding-right: $spacing-unit-horizontal;
+      }
+    }
+
+    > div:last-of-type {
+      @include font-size(22px);
+      letter-spacing: -0.04em;
+
+      @include breakpoint($l ($xl - 1)) {
+        @include float-span(7, 'last');
+      }
+
+      @include breakpoint($xl, true) {
+        @include float-span(8, 'last');
+      }
+    }
+  }
+}

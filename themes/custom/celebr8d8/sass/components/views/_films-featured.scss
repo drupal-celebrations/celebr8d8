@@ -1,0 +1,87 @@
+.view--films-main {
+  &.view-display--featured {
+    position: relative;
+    padding-bottom: $spacing-unit-vertical;
+    @extend %constrained;
+
+    .view__header {
+      position: relative;
+      padding: 0 10px 3px 3px;
+      @extend %clearfix;
+      background-color: palette(purple);
+
+      @include breakpoint(0 $xs) {
+        margin-left: -$spacing-unit-horizontal;
+        margin-right: -$spacing-unit-horizontal;
+      }
+
+      @include breakpoint($xs) {
+        padding-right: 30px;
+      }
+
+      h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+        float: left;
+        padding: 0.75em 1.25em;
+        background-color: palette(mono, light);
+        @include font-size(20px);
+        color: palette(purple);
+        letter-spacing: -0.06em;
+
+        @include breakpoint($xs, true) {
+          @include font-size(26px);
+        }
+      }
+    }
+
+    .view__content {
+      padding-top: $spacing-unit-vertical;
+      padding-bottom: $spacing-unit-vertical;
+    }
+
+    .views-row {
+      @include breakpoint($xl, true) {
+        @include float-span(4);
+
+        &:nth-child(3n) {
+          @include float-span(4, 'last');
+        }
+      }
+    }
+
+    .more-link {
+      float: right;
+
+      a {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        color: palette(mono, x-light);
+        text-decoration: none;
+        display: block;
+        font-family: 'Bangers';
+        padding-right: double($spacing-unit-horizontal) + 7px;
+        padding-left: halve($spacing-unit-horizontal);
+        @include font-size(20px);
+        @include icon(block-arrow-right, false);
+        background-position: 93% 50%;
+        line-height: 2.75em;
+
+        @include breakpoint($xs, true) {
+          line-height: 3.5em;
+          padding-right: triple($spacing-unit-horizontal);
+          padding-left: $spacing-unit-horizontal;
+        }
+
+        &:hover,
+        &:focus {
+          @include icon(block-arrow-right_active, false, false);
+          color: palette(purple);
+          background-color: palette(mono, x-light);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+uuid: f2bd85eb-a5b7-4980-bc11-17bb33668a91
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - jackdaw
+id: jackdaw_main_menu
+theme: jackdaw
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

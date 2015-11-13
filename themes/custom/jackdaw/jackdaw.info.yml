@@ -1,0 +1,24 @@
+name: Jackdaw
+type: theme
+description: Sleek, efficient, and clever - Jackdaw is a base theme that bridges the gap between the sparseness of Stable and the hellhole of Classy.
+core: 8.x
+base theme: stable
+regions:
+  header: Header
+  navigation: 'Navigation'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  highlighted: Highlighted
+  featured_top: 'Featured top'
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  featured_bottom_first: 'Featured bottom first'
+  featured_bottom_second: 'Featured bottom second'
+  featured_bottom_third: 'Featured bottom third'
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
+  footer_third: 'Footer third'
+  footer_fourth: 'Footer fourth'
+  footer_fifth: 'Footer fifth'
