@@ -1,0 +1,25 @@
+/* General settings */
+div.selector,
+div.selector span,
+div.checker span,
+div.radio span,
+div.uploader,
+div.uploader span.action {
+  -webkit-font-smoothing: antialiased;
+}
+
+div.selector,
+div.checker,
+div.radio,
+div.uploader {
+  display: -moz-inline-box;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: middle;
+
+  /* Keeping this as :focus to remove browser styles */
+  &:focus {
+    outline: 0;
+  }
+}

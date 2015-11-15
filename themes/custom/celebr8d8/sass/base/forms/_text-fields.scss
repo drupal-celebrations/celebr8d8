@@ -1,0 +1,29 @@
+.form-text,
+.form-textarea,
+.form-password,
+.form-email {
+  padding: 0 $spacing-unit-horizontal;
+  max-width: 100%;
+  background-color: palette(mono, light);
+  border: 2px solid palette(purple);
+  color: palette(purple);
+  @include font-size(16px);
+  font-weight: 700;
+
+  &:focus {
+    border-color: palette(pink);
+  }
+}
+
+.form-text,
+.form-password,
+.form-email {
+  line-height: 3.5;
+  height: 3.5em;
+}
+
+.form-textarea {
+  width: 100%;
+  padding-top: halve($spacing-unit-vertical);
+  padding-bottom: halve($spacing-unit-vertical);
+}

@@ -10,6 +10,16 @@ label {
   }
 }
 
+.form-item {
+  margin-bottom: $spacing-unit-vertical;
+
+  .description {
+    margin-top: 1em;
+    font-style: italic;
+    color: palette(purple, light);
+  }
+}
+
 .form--inline {
   @extend %clearfix;
 

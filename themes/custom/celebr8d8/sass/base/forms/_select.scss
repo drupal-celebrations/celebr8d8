@@ -1,9 +1,14 @@
 .form-select {
-  background-color: palette(mono, x-light);
+  max-width: 530px;
+  background-color: palette(mono, light);
   border: 2px solid palette(purple);
   color: palette(purple, light);
   @include font-size(16px);
   font-weight: 700;
+
+  &:focus {
+    border-color: palette(pink);
+  }
 }
 
 /***************************
@@ -12,7 +17,8 @@
 
 /* Select */
 div.selector {
-  background-color: palette(mono, x-light);
+  display: block !important;
+  background-color: palette(mono, light);
   border: 2px solid palette(purple);
   color: palette(purple, light);
   @include font-size(16px);
@@ -24,6 +30,7 @@ div.selector {
   height: 53px;
   box-sizing: content-box;
   width: auto !important;
+  max-width: 550px;
 
   select {
     opacity: 0;
@@ -50,7 +57,6 @@ div.selector {
     cursor: pointer;
     @include icon(small-arrow-down, false);
     background-position: 93.5% 50%;
-//    background: transparent image-url('selector-arrows.png') 100% 0 no-repeat;
   }
 
   &.focus {
