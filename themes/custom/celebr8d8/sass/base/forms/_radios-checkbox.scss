@@ -2,6 +2,21 @@
 .form-radios {
 }
 
+.field--type-boolean,
+.form-type-checkbox,
+.form-type-radio {
+  label {
+    @include font-size($base-font-size);
+    margin-top: 0.25em;
+    margin-bottom: 0;
+  }
+
+  .description {
+    margin-top: 0;
+    overflow: hidden;
+  }
+}
+
 /***************************
 ** Start of Uniform styles
 ***************************/
@@ -66,7 +81,6 @@ div.radio {
 /* Checkers */
 div.checker {
   padding: 4px;
-  margin-top: 7px;
 
   span {
     width: 16px;
@@ -89,7 +103,6 @@ div.checker {
 /* Radio */
 div.radio {
   border-radius: 28px;
-  margin-top: 6px;
 
   span {
     width: 16px;

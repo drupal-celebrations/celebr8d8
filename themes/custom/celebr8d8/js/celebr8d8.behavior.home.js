@@ -68,4 +68,22 @@
     }
   };
 
+  /**
+   * Behaviour for Film Teaser matchHeights.
+   */
+  Drupal.behaviors.filmMatchHeights = {
+    attach: function () {
+      var matchHeightSelectors = [
+        '.node--type-film.node--view-mode-teaser .node__main > h2',
+        '.node--type-film.node--view-mode-teaser .node__content'
+      ];
+
+      $.each(matchHeightSelectors, function (i) {
+        if ($(matchHeightSelectors[i]).length) {
+          $(matchHeightSelectors[i]).matchHeight(true);
+        }
+      });
+    }
+  };
+
 })(jQuery, Drupal);
