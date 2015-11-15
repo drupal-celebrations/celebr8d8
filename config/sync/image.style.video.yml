@@ -1,0 +1,14 @@
+uuid: 613b7571-98a6-41d0-971c-2892d0d40230
+langcode: en
+status: true
+dependencies: {  }
+name: video
+label: 'Video thumbnail'
+effects:
+  b8228a1d-8b18-47aa-b243-674321d0cced:
+    uuid: b8228a1d-8b18-47aa-b243-674321d0cced
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 585
+      height: 323

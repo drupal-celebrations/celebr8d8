@@ -57,7 +57,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: medium
+      image_style: video
       image_link: content
     third_party_settings: {  }
 hidden:
