@@ -66,8 +66,22 @@
       }
     }
 
+    div.selector {
+      span {
+        background-position: 93.5% 50%;
+      }
+    }
+
     .form-submit {
       margin-top: 1.65em;
+      padding: 0 1.5em;
+
+      line-height: 2.2;
+      height: 2.2em;
+
+      @include breakpoint($s, true) {
+        @include font-size(26px);
+      }
     }
   }
 

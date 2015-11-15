@@ -20,7 +20,11 @@ global-js:
     - core/drupal.debounce
 
 home-js:
+  css:
+    theme:
+      libraries/magnific-popup/dist/magnific-popup.css: {}
   js:
+    libraries/magnific-popup/dist/jquery.magnific-popup.min.js: {}
     js/celebr8d8.behavior.home.js: {}
   dependencies:
     - core/jquery

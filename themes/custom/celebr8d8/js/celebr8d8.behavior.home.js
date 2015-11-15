@@ -10,7 +10,7 @@
    */
   Drupal.behaviors.homePageJump = {
     attach: function () {
-      $('.block--views-blockfilms-main-featured').once().click(function (e) {
+      $('.block--views-blockfilms-main-featured .more-link a').once().click(function (e) {
         e.preventDefault();
 
         var $target = $('#block-celebr8d8-content'),
@@ -56,6 +56,15 @@
         });
 
       $(window).on('resize', Drupal.debounce(manualToggleFilters, 20)).trigger('resize');
+    }
+  };
+
+  /**
+   * Behaviour for Magnific Popup.
+   */
+  Drupal.behaviors.magnificPopup = {
+    attach: function () {
+      $('#block-celebr8d8-homepage-header .field--name-body a').magnificPopup({type: 'iframe'});
     }
   };
 

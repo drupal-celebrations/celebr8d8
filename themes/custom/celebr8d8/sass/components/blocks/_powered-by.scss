@@ -1,0 +1,33 @@
+#block-celebr8d8-footer-poweredby {
+
+  .block__content {
+    @extend %clearfix;
+
+    a {
+      display: block;
+      float: left;
+      clear: left;
+      margin-right: double($spacing-unit-horizontal);
+      margin-bottom: $spacing-unit-vertical;
+      overflow: hidden;
+      text-indent: -9999px;
+
+      &:nth-child(2n) {
+        clear: right;
+        margin-right: 0;
+      }
+    }
+
+    a[href="http://drupal.org"] {
+      background: transparent image-url('logos/drupal8.png') 50% 50% no-repeat;
+      width: 153px;
+      height: 37px;
+    }
+
+    a[href="http://platform.sh"] {
+      background: transparent image-url('logos/platform.png') 50% 50% no-repeat;
+      width: 182px;
+      height: 36px;
+    }
+  }
+}

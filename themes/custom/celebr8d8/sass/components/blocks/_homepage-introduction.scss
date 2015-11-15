@@ -5,14 +5,25 @@
 
   .field--name-body {
     > a:first-child {
+      display: inline-block;
+
       @include breakpoint($l ($xl - 1)) {
         @include float-span(7, 'last');
         clear: both;
       }
 
+      @include breakpoint($l, true) {
+        padding-left: double($spacing-unit-horizontal);
+        padding-bottom: double($spacing-unit-vertical);
+      }
+
       @include breakpoint($xl, true) {
         @include float-span(8, 'last');
         clear: both;
+      }
+
+      img {
+        display: block;
       }
     }
 
