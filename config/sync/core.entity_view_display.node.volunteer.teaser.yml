@@ -10,16 +10,41 @@ dependencies:
     - field.field.node.volunteer.field_twitter
     - node.type.volunteer
   module:
+    - image
+    - text
     - user
 id: node.volunteer.teaser
 targetEntityType: node
 bundle: volunteer
 mode: teaser
 content:
-  links:
-    weight: 100
+  field_do_username:
+    type: string
+    weight: 2
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_photo:
+    type: image
+    weight: 0
+    label: hidden
+    settings:
+      image_style: volunteer_thumbnail
+      image_link: ''
+    third_party_settings: {  }
+  field_prof:
+    type: text_default
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_twitter:
+    type: string
+    weight: 1
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
 hidden:
-  field_do_username: true
-  field_photo: true
-  field_prof: true
-  field_twitter: true
+  links: true

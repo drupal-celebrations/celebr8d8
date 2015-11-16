@@ -1,0 +1,14 @@
+uuid: 9e998255-6fc1-4d97-b625-37e61af9ca55
+langcode: en
+status: true
+dependencies: {  }
+name: volunteer_thumbnail
+label: 'Volunteer Thumbnail'
+effects:
+  0ec30c3a-cbd8-422b-af04-4f8fb8a34510:
+    uuid: 0ec30c3a-cbd8-422b-af04-4f8fb8a34510
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 350
