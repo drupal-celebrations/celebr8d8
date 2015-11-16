@@ -715,13 +715,13 @@ settings:
       label: 'United Arab Emirates (the)'
     -
       value: GB
-      label: 'United Kingdom of Great Britain and Northern Ireland (the)'
+      label: 'United Kingdom'
     -
       value: UM
       label: 'United States Minor Outlying Islands (the)'
     -
       value: US
-      label: 'United States of America (the)'
+      label: 'United States of America'
     -
       value: UY
       label: Uruguay
