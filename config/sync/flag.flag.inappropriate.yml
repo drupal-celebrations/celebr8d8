@@ -1,0 +1,36 @@
+uuid: 9aacbc93-2765-4ed8-863b-59b80b33a41b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: inappropriate
+label: Inappropriate
+bundles:
+  - film
+entity_type: node
+enabled: true
+global: true
+weight: 0
+flag_short: Flag
+flag_long: 'Flag this content as inappropriate'
+flag_message: Flagged
+unflag_short: Unflag
+unflag_long: 'Unflag this content as inappropriate'
+unflag_message: Unflagged
+unflag_denied_text: 'Already Flagged'
+flag_type: 'entity:node'
+link_type: reload
+flagTypeConfig:
+  show_in_links:
+    full: full
+    teaser: teaser
+    rss: '0'
+    search_index: '0'
+    search_result: '0'
+  show_as_field: 1
+  show_on_form: 0
+  show_contextual_link: 0
+  i18n: '0'
+  access_author: ''
+linkTypeConfig: {  }

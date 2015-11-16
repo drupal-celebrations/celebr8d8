@@ -11,3 +11,4 @@ permissions:
   3: 'access site-wide contact form'
   4: 'search content'
   5: 'create film content'
+  6: 'flag inappropriate'
