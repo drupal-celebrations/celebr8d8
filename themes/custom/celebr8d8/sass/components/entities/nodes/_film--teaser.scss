@@ -58,17 +58,23 @@
 
     .node__content {
       position: relative;
-      padding-right: triple($spacing-unit-horizontal);
+      padding-bottom: $spacing-unit-vertical;
     }
 
     .field--name-field-drupal-org-username,
-    .field--name-field-twitter-account {
+    .field--name-field-twitter-account,
+    a[id^="flag-inappropriate-id-"] {
       position: absolute;
       bottom: 0;
     }
 
+    a[id^="flag-inappropriate-id-"] {
+      right: 66px;
+      margin-bottom: 1px;
+    }
+
     .field--name-field-drupal-org-username {
-      right: 35px;
+      right: 34px;
     }
 
     .field--name-field-twitter-account {
@@ -95,10 +101,6 @@
       > h2 {
         margin-top: 0;
         @include font-size(20px);
-
-        a {
-          text-decoration: none;
-        }
       }
     }
   }
