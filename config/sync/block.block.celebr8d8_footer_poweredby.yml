@@ -1,0 +1,25 @@
+uuid: ca3933b3-110e-4265-ac3b-596e005a183a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:34702ed8-9df9-4986-a611-17675d15787c'
+  module:
+    - block_content
+  theme:
+    - celebr8d8
+id: celebr8d8_footer_poweredby
+theme: celebr8d8
+region: footer_third
+weight: -9
+provider: null
+plugin: 'block_content:34702ed8-9df9-4986-a611-17675d15787c'
+settings:
+  id: 'block_content:34702ed8-9df9-4986-a611-17675d15787c'
+  label: 'Powered by'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

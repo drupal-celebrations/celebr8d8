@@ -1,0 +1,31 @@
+uuid: 510cd350-6876-42fb-bf03-3bcf696b7f6d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:61a40fbd-8bf6-4502-8307-07ab6a00014e'
+  module:
+    - block_content
+    - system
+  theme:
+    - celebr8d8
+id: celebr8d8_homepage_video_teaser
+theme: celebr8d8
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:61a40fbd-8bf6-4502-8307-07ab6a00014e'
+settings:
+  id: 'block_content:61a40fbd-8bf6-4502-8307-07ab6a00014e'
+  label: 'Video Teaser'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

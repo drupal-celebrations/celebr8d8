@@ -1,0 +1,25 @@
+uuid: 86c44beb-2b25-43a8-9609-9a308b3d6268
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:34702ed8-9df9-4986-a611-17675d15787c'
+  module:
+    - block_content
+  theme:
+    - stable
+id: stable_footer_poweredby
+theme: stable
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'block_content:34702ed8-9df9-4986-a611-17675d15787c'
+settings:
+  id: 'block_content:34702ed8-9df9-4986-a611-17675d15787c'
+  label: 'Powered by'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

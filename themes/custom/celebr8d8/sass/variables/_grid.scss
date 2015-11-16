@@ -1,0 +1,22 @@
+// Set consistent vertical and horizontal spacing units.
+$spacing-unit-vertical    : 25px;
+$spacing-unit-horizontal  : 20px;
+
+// Define breakpoints for use with the breakpoint mixin.
+$xs:       480px;
+$s:        625px;
+$m:        768px;
+$l:        960px;
+$xl:       1184px;
+
+$hdpi:      min-resolution 1.5dppx; // Min 1.5dppx for higher resolution displays.
+
+// Set up Singularity grid variables.
+@include add-grid(4);
+@include add-grid(8 at $s);
+@include add-grid(12 at $m);
+
+@include add-gutter(1/4);
+
+// Max container width
+$max-container-width: 74em;

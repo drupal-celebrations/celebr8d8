@@ -1,0 +1,24 @@
+uuid: 50a95e52-2a31-4f9e-8148-7209d8da5ab6
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - celebr8d8
+id: celebr8d8_footer
+theme: celebr8d8
+region: '-1'
+weight: -9
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

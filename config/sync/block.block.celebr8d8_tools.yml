@@ -1,0 +1,24 @@
+uuid: 0f243c7c-a5a3-433c-9220-32b8a21de043
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - celebr8d8
+id: celebr8d8_tools
+theme: celebr8d8
+region: '-1'
+weight: -7
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: bd714834-1d34-4ec2-9600-be2e7e723296
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3bfb308f-08fb-4af2-b400-c1ef2b7184dd'
+  module:
+    - block_content
+  theme:
+    - jackdaw
+id: jackdaw_add_video_cta
+theme: jackdaw
+region: header
+weight: -11
+provider: null
+plugin: 'block_content:3bfb308f-08fb-4af2-b400-c1ef2b7184dd'
+settings:
+  id: 'block_content:3bfb308f-08fb-4af2-b400-c1ef2b7184dd'
+  label: 'Add Video'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

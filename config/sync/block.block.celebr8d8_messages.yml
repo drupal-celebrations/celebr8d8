@@ -1,0 +1,20 @@
+uuid: 0091b014-06b1-4bce-b508-8bf70bcd1011
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - celebr8d8
+id: celebr8d8_messages
+theme: celebr8d8
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

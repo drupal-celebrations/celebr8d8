@@ -1,0 +1,18 @@
+.l-footer {
+  background-color: palette(mono, mid-light);
+  color: palette(purple, light);
+
+  h2 {
+    color: palette(purple);
+  }
+
+  a {
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
+
+.region-footer-fourth {
+  color: palette(purple);
+  @include font-size(14px);
+}

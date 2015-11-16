@@ -1,0 +1,28 @@
+.node-film-form {
+  @extend %clearfix;
+
+  [class^="field--type-"] {
+    @include breakpoint($m, true) {
+      float: left;
+      width: 48%;
+      margin-right: 4%;
+      clear: left;
+
+      &:nth-of-type(2n) {
+        margin-right: 0;
+        clear: right;
+      }
+
+      &:empty {
+        width: 0;
+      }
+    }
+  }
+
+  .field--type-text-long,
+  .field--type-boolean {
+    float: none;
+    margin-right: none;
+    width: 100%;
+  }
+}

@@ -1,0 +1,17 @@
+/* Block Quotes */
+blockquote {
+
+}
+
+/* Quotes */
+q {
+  quotes: "“" "”" "‘" "’";
+  font-style: italic;
+
+  &:before {
+    content: open-quote;
+  }
+  &:after {
+     content: close-quote;
+  }
+}

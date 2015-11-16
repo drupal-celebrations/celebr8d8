@@ -1,0 +1,6 @@
+// Font size mixin to generate a REM based font size declaration (based on the
+// $base-font-size) with a pixel fallback given a font size in pixels.
+@mixin font-size($font-size){
+  font-size: $font-size;
+  font-size: ($font-size / $base-font-size)*1rem;
+}

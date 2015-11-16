@@ -1,0 +1,20 @@
+uuid: 9e579785-dd39-4bf0-a400-b7c181ea52ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - jackdaw
+id: jackdaw_help
+theme: jackdaw
+region: content
+weight: -9
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

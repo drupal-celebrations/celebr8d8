@@ -1,0 +1,105 @@
+.node--type-film {
+  &.node--view-mode-teaser {
+    .field--name-field-youtube-url {
+      img {
+        width: 100%;
+        display: block;
+      }
+
+      a {
+        position: relative;
+        display: block;
+
+        &:before,
+        &:after {
+          content: '';
+          position: absolute;
+        }
+
+        &:before {
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 100%;
+          width: 100%;
+          background-color: palette(purple);
+          opacity: 0;
+          transition: opacity 0.25s ease;
+        }
+
+        &:after {
+          top: 50%;
+          left: 50%;
+          @include icon(play);
+          margin-left: - halve(image-width('icons/png/play.png'));
+          margin-top: - halve(image-height('icons/png/play.png'));
+
+          .view--films-main.view-display--featured & {
+            $featured_width: 58px;
+            $featured_height: 40px;
+
+            background-size: $featured_width $featured_height;
+            height: $featured_height;
+            width: $featured_width;
+            margin-left: - halve($featured_width);
+            margin-top: - halve($featured_height);
+          }
+        }
+
+        &:hover,
+        &:focus {
+          &:before {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+
+    .node__content {
+      position: relative;
+      padding-right: triple($spacing-unit-horizontal);
+    }
+
+    .field--name-field-drupal-org-username,
+    .field--name-field-twitter-account {
+      position: absolute;
+      bottom: 0;
+    }
+
+    .field--name-field-drupal-org-username {
+      right: 35px;
+    }
+
+    .field--name-field-twitter-account {
+      right: 0;
+      margin-bottom: 2px;
+    }
+
+    .node__main {
+      position: relative;
+      background-color: palette(mono, x-light);
+      padding: 1.75em;
+      border-bottom: 1px solid palette(pink);
+
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 40%;
+        height: 0;
+        border-top: 4px solid palette(pink);
+      }
+
+      > h2 {
+        margin-top: 0;
+        @include font-size(20px);
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

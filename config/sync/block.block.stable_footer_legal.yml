@@ -1,0 +1,25 @@
+uuid: b27f3f78-21fa-436e-b300-fca8d6b97391
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:35dcd24d-58a9-4e8d-ab09-091f235b5d76'
+  module:
+    - block_content
+  theme:
+    - stable
+id: stable_footer_legal
+theme: stable
+region: sidebar_first
+weight: -10
+provider: null
+plugin: 'block_content:35dcd24d-58a9-4e8d-ab09-091f235b5d76'
+settings:
+  id: 'block_content:35dcd24d-58a9-4e8d-ab09-091f235b5d76'
+  label: Legal
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

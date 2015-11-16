@@ -1,0 +1,24 @@
+uuid: cad29b3a-c206-49cb-8308-8bf663566d0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - celebr8d8
+id: celebr8d8_main_menu
+theme: celebr8d8
+region: navigation
+weight: -10
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

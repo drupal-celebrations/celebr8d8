@@ -1,0 +1,25 @@
+uuid: dd76d020-f538-4a23-8906-6ec34f93cc3b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:34702ed8-9df9-4986-a611-17675d15787c'
+  module:
+    - block_content
+  theme:
+    - jackdaw
+id: jackdaw_footer_poweredby
+theme: jackdaw
+region: footer_third
+weight: -9
+provider: null
+plugin: 'block_content:34702ed8-9df9-4986-a611-17675d15787c'
+settings:
+  id: 'block_content:34702ed8-9df9-4986-a611-17675d15787c'
+  label: 'Powered by'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

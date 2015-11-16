@@ -1,0 +1,10 @@
+uuid: ae80dde5-f2c7-4e09-9a00-ee6ba708e58f
+langcode: en
+status: true
+dependencies: {  }
+id: celebr8_drupal8_contact
+label: 'Contact the Celebr8 Drupal8 team'
+recipients:
+  - p.johnson@ctidigital.com
+reply: ''
+weight: 0

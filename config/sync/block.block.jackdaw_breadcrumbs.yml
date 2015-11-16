@@ -1,0 +1,20 @@
+uuid: 64a18a6d-b3e2-4dd0-b500-c8721bf10b15
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - jackdaw
+id: jackdaw_breadcrumbs
+theme: jackdaw
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

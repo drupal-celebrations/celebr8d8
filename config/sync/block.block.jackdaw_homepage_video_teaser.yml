@@ -1,0 +1,31 @@
+uuid: f21241b7-b703-4ecb-9502-2d4e0410ee6c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:61a40fbd-8bf6-4502-8307-07ab6a00014e'
+  module:
+    - block_content
+    - system
+  theme:
+    - jackdaw
+id: jackdaw_homepage_video_teaser
+theme: jackdaw
+region: content
+weight: -2
+provider: null
+plugin: 'block_content:61a40fbd-8bf6-4502-8307-07ab6a00014e'
+settings:
+  id: 'block_content:61a40fbd-8bf6-4502-8307-07ab6a00014e'
+  label: 'Video Teaser'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

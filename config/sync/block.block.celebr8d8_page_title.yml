@@ -1,0 +1,18 @@
+uuid: 106cf363-45ed-4346-a000-e607d2fd8f35
+langcode: en
+status: true
+dependencies:
+  theme:
+    - celebr8d8
+id: celebr8d8_page_title
+theme: celebr8d8
+region: featured_top
+weight: -10
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

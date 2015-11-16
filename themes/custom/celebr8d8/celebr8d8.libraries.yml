@@ -1,0 +1,32 @@
+global-css:
+  css:
+    theme:
+      css/celebr8d8.normalize.css: {}
+      css/celebr8d8.styles.css: {}
+#      css/celebr8d8.no-query.css: { browsers: { IE: 'lte IE 8' }}
+
+global-js:
+  js:
+    libraries/jquery.uniform/jquery.uniform.min.js: {}
+    js/modernizr.custom.min.js: {}
+    js/celebr8d8.behavior.menu-toggle.min.js: {}
+    js/celebr8d8.behavior.logo-swap.min.js: {}
+    js/celebr8d8.behavior.uniform.min.js: {}
+  dependencies:
+    - core/matchmedia
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
+    - core/drupal.debounce
+
+home-js:
+  css:
+    theme:
+      libraries/magnific-popup/dist/magnific-popup.css: {}
+  js:
+    libraries/magnific-popup/dist/jquery.magnific-popup.min.js: {}
+    libraries/matchHeight/jquery.matchHeight-min.js: {}
+    js/celebr8d8.behavior.home.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once

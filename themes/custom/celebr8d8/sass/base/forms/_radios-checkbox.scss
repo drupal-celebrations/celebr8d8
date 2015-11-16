@@ -1,0 +1,125 @@
+.form-checkboxes,
+.form-radios {
+}
+
+.field--type-boolean,
+.form-type-checkbox,
+.form-type-radio {
+  label {
+    @include font-size($base-font-size);
+    margin-top: 0.25em;
+    margin-bottom: 0;
+  }
+
+  .description {
+    margin-top: 0;
+    overflow: hidden;
+  }
+}
+
+/***************************
+** Start of Uniform styles
+***************************/
+div.checker,
+div.radio {
+  position: relative;
+  border: 2px solid palette(purple);
+  font-size: 0;
+  background-color: palette(mono, light);
+  margin-right: 7px;
+  float: left;
+
+  &,
+  span,
+  input {
+    width: 28px;
+    height: 28px;
+  }
+
+  span {
+    display: -moz-inline-box;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    text-align: center;
+  }
+
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    border: none;
+    background: none;
+    display: -moz-inline-box;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    text-align: center;
+    margin: 0;
+  }
+
+  &.active {
+    background-color: palette(mono, mid-light);
+  }
+
+  &.focus {
+    border-color: palette(pink);
+  }
+
+  &.disabled {
+    border-color: palette(mono);
+
+    &.active {
+      background-color: palette(mono, xx-light);
+    }
+  }
+}
+
+/* Checkers */
+div.checker {
+  padding: 4px;
+
+  span {
+    width: 16px;
+    height: 16px;
+
+    &.checked {
+      background-color: palette(purple);
+    }
+  }
+
+  &.disabled {
+    span {
+      &.checked {
+        background-color: palette(mono);
+      }
+    }
+  }
+}
+
+/* Radio */
+div.radio {
+  border-radius: 28px;
+
+  span {
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    margin: 4px;
+
+    &.checked {
+      background-color: palette(purple);
+    }
+  }
+
+  &.disabled {
+    span {
+      &.checked {
+        background-color: palette(mono);
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+uuid: 6b296f4a-ed4c-4262-8b00-d30cc8cb8284
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.films_main
+  module:
+    - system
+    - views
+  theme:
+    - jackdaw
+id: jackdaw_views_block__films_main_featured
+theme: jackdaw
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:films_main-featured'
+settings:
+  id: 'views_block:films_main-featured'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

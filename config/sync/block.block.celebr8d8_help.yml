@@ -1,0 +1,20 @@
+uuid: 19065906-6a9c-46cb-a902-2e683b2ac4c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - celebr8d8
+id: celebr8d8_help
+theme: celebr8d8
+region: content
+weight: -10
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

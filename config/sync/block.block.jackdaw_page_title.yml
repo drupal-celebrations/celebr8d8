@@ -1,0 +1,18 @@
+uuid: 9a5c6f95-9656-4e7b-a200-ce3ffa96de22
+langcode: en
+status: true
+dependencies:
+  theme:
+    - jackdaw
+id: jackdaw_page_title
+theme: jackdaw
+region: content
+weight: -8
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

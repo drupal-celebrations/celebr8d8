@@ -1,0 +1,127 @@
+.pager {
+  .pager__items {
+    padding-left: 0;
+    font-size: 0;
+    position: relative;
+    @include breakpoint(0 $xs) {
+      padding-top: 35px;
+    }
+  }
+
+  li {
+    display: inline-block;
+    padding: 0;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    @include font-size(14px);
+    font-weight: 700;
+    vertical-align: top;
+
+    a {
+      display: block;
+      padding: 0.25em 0.65em;
+      border: 1px solid palette(purple);
+      min-width: 2em;
+      text-align: center;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        background-color: palette(purple, light);
+        color: palette(mono, x-light);
+      }
+    }
+
+    &.is-active {
+      a {
+        background-color: palette(purple);
+        color: palette(mono, x-light);
+      }
+    }
+
+    &.pager__item--first,
+    &.pager__item--last {
+      @include breakpoint(0 $xs) {
+        position: absolute;
+        top: 0;
+      }
+
+      a {
+        border: none;
+        &:hover,
+        &:focus {
+          color: palette(purple, light);
+          background-color: transparent;
+        }
+      }
+    }
+
+    &.pager__item--first {
+      @include breakpoint(0 $xs) {
+        left: 0;
+      }
+
+      a {
+        @include icon(double-arrow-left, false, true);
+        padding-left: $spacing-unit-horizontal;
+        background-position: 0 50%;
+      }
+    }
+
+    &.pager__item--last {
+      @include breakpoint(0 $xs) {
+        right: 0;
+      }
+
+      a {
+        @include icon(double-arrow-right, false, true);
+        padding-right: $spacing-unit-horizontal;
+        background-position: 100% 50%;
+      }
+    }
+
+    &.pager__item--previous,
+    &.pager__item--next {
+      padding: 0;
+      overflow: hidden;
+
+      a {
+        width: 2em;
+        text-indent: -9999px;
+
+        &:hover,
+        &:focus {
+          background-color: palette(purple, light);
+        }
+      }
+    }
+
+    &.pager__item--previous {
+      margin-left: 0;
+
+      a {
+        @include icon(small-arrow-left, false, true);
+        background-position: 50% 50%;
+
+        &:hover,
+        &:focus {
+          @include icon(small-arrow-left_active, false, false);
+        }
+      }
+    }
+
+    &.pager__item--next {
+      margin-right: 0;
+
+      a {
+        @include icon(small-arrow-right, false, true);
+        background-position: 50% 50%;
+
+        &:hover,
+        &:focus {
+          @include icon(small-arrow-right_active, false, false);
+        }
+      }
+    }
+  }
+}

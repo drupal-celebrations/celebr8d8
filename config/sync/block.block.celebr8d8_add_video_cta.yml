@@ -1,0 +1,25 @@
+uuid: ea9093d8-ca98-49aa-b237-5563f51c308d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3bfb308f-08fb-4af2-b400-c1ef2b7184dd'
+  module:
+    - block_content
+  theme:
+    - celebr8d8
+id: celebr8d8_add_video_cta
+theme: celebr8d8
+region: header
+weight: -10
+provider: null
+plugin: 'block_content:3bfb308f-08fb-4af2-b400-c1ef2b7184dd'
+settings:
+  id: 'block_content:3bfb308f-08fb-4af2-b400-c1ef2b7184dd'
+  label: 'Add Video'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,32 @@
+label {
+  display: block;
+  margin-bottom: 0.25em;
+  @include font-size(20px);
+  font-weight: 700;
+  color: palette(purple);
+
+  @include breakpoint($s, true) {
+    @include font-size(26px);
+  }
+}
+
+.form-item {
+  margin-bottom: $spacing-unit-vertical;
+
+  .description {
+    margin-top: 1em;
+    font-style: italic;
+    color: palette(purple, light);
+  }
+}
+
+.form--inline {
+  @extend %clearfix;
+
+  .form-item {
+    @include breakpoint($xs, true) {
+      float: left;
+      margin-right: $spacing-unit-horizontal;
+    }
+  }
+}
