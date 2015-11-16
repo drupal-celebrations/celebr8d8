@@ -75,30 +75,26 @@
 %}
 <article{{ attributes.addClass(classes) }}>
 
-  {{ content.field_youtube_url }}
+  {{ content.field_photo }}
 
-  <div class="node__main">
-    {{ title_prefix }}
-    {% if not page %}
-      <h2{{ title_attributes }}>
-        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-      </h2>
-    {% endif %}
-    {{ title_suffix }}
+  {{ title_prefix }}
+  {% if not page %}
+    <h2{{ title_attributes }}>{{ label }}</a></h2>
+  {% endif %}
+  {{ title_suffix }}
 
-    {% if display_submitted %}
-      <footer class="node__meta">
-        {{ author_picture }}
-        <div{{ author_attributes.addClass('node__submitted') }}>
-          {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-          {{ metadata }}
-        </div>
-      </footer>
-    {% endif %}
+  {% if display_submitted %}
+    <footer class="node__meta">
+      {{ author_picture }}
+      <div{{ author_attributes.addClass('node__submitted') }}>
+        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+        {{ metadata }}
+      </div>
+    </footer>
+  {% endif %}
 
-    <div{{ content_attributes.addClass('node__content') }}>
-      {{ content|without('field_youtube_url') }}
-    </div>
+  <div{{ content_attributes.addClass('node__content') }}>
+    {{ content|without('field_photo') }}
   </div>
 
 </article>
