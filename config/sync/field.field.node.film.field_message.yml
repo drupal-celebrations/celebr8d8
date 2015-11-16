@@ -12,7 +12,7 @@ field_name: field_message
 entity_type: node
 bundle: film
 label: Message
-description: 'A message to us.'
+description: ''
 required: false
 translatable: false
 default_value: {  }
