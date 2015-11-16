@@ -193,7 +193,6 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'uglify:dist',
     'jshint',
-    'imagemin:dist',
     'svgmin:icons',
     'svg2png',
     'copy:icon-svg',

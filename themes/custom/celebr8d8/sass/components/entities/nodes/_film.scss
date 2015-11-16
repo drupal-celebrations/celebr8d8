@@ -20,6 +20,20 @@
   }
 }
 
+// FLag doesn't give us anything better and you seemingly have to override the
+// whole class to theme this at the moment.
+a[id^="flag-inappropriate-id-"] {
+  position: absolute;
+  right: 66px;
+  bottom: 1px;
+  @include icon(flag);
+
+  &:hover,
+  &:focus {
+    @include icon(flag-active, false, false);
+  }
+}
+
 .field--name-field-your-name {
   font-weight: 700;
 }
