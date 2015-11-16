@@ -25,13 +25,13 @@ content:
     third_party_settings: {  }
     type: string
   field_photo:
+    type: image
     weight: 0
     label: hidden
     settings:
       image_style: volunteer_thumbnail
       image_link: ''
     third_party_settings: {  }
-    type: image
   field_prof:
     weight: 3
     label: hidden

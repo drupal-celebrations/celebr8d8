@@ -1,0 +1,79 @@
+.field--name-field-do-username {
+  a {
+    @include icon(drupal);
+
+    &:hover,
+    &:focus {
+      @include icon(drupal_active, false, false);
+    }
+  }
+}
+
+.field--name-field-twitter {
+  a {
+    @include icon(twitter);
+
+    &:hover,
+    &:focus {
+      @include icon(twitter_active, false, false);
+    }
+  }
+}
+
+.node--type-volunteer {
+  &.node--view-mode-teaser {
+    text-align: center;
+
+    > h2 {
+      color: palette(purple);
+      @include font-size(26px);
+      margin-bottom: 0;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .field--name-field-photo {
+      margin-bottom: halve($spacing-unit-vertical);
+      display: inline-block;
+      width: 195px;
+      height: 195px;
+      border-radius: 195px;
+      position: relative;
+      overflow: hidden;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        background-color: palette(purple);
+        opacity: 0.6;
+      }
+    }
+
+    .field--name-field-do-username,
+    .field--name-field-twitter {
+      display: inline-block;
+      margin-left: 0.25em;
+      margin-right: 0.25em;
+    }
+
+    .field--name-field-prof {
+      margin-top: $spacing-unit-vertical;
+      color: palette(purple);
+      @include font-size(22px);
+
+
+      @include breakpoint($m, true) {
+        padding-left: halve($spacing-unit-horizontal);
+        padding-right: halve($spacing-unit-horizontal);
+      }
+    }
+  }
+}
