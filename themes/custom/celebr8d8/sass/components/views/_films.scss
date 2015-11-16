@@ -85,6 +85,12 @@
     }
   }
 
+  .view__empty {
+    padding-top: double($spacing-unit-vertical);
+    padding-bottom: double($spacing-unit-vertical);
+    @extend %constrained;
+  }
+
   .pager {
     text-align: center;
 

@@ -333,7 +333,22 @@ display:
       defaults:
         style: true
         row: true
+        empty: false
       display_description: ''
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: '<p>Sorry, there are no films available for the filters you have entered.</p>'
+            format: basic_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
