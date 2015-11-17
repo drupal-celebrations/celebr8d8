@@ -1,10 +1,6 @@
 .node--type-film {
   &.node--view-mode-teaser {
 
-    > h2 {
-      color: palette(mono, dark);
-    }
-
     .field--name-field-youtube-url {
       img {
         width: 100%;
@@ -103,6 +99,7 @@
       }
 
       > h2 {
+        color: palette(mono, dark);
         margin-top: 0;
         @include font-size(20px);
       }
