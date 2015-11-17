@@ -4,9 +4,7 @@
   "dependencies": {
     "selectivizr-bower": "Mediamoose/selectivizr",
     "jquery.uniform": "pixelmatrix/uniform",
-    "jquery-smartresize": "louisremi/jquery-smartresize",
     "matchHeight": "liabru/jquery-match-height",
-    "magnific-popup": "dimsemenov/Magnific-Popup",
-    "fitvids": "davatron5000/FitVids.js"
+    "magnific-popup": "dimsemenov/Magnific-Popup"
   }
 }

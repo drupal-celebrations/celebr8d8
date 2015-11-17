@@ -11,7 +11,7 @@
       background-color: palette(pink);
       color: palette(mono, x-light);
       text-decoration: none;
-      font-family: 'Bangers';
+      font-family: $banger-font-family;
       @include font-size(20px);
       text-align: center;
       line-height: 68px;

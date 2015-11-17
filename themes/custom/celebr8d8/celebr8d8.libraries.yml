@@ -3,11 +3,12 @@ global-css:
     theme:
       css/celebr8d8.normalize.css: {}
       css/celebr8d8.styles.css: {}
-      css/celebr8d8.no-query.css: { type: external, browsers: { IE: 'lte IE 8', '!IE': false } }
+      css/celebr8d8.no-query.css: { browsers: { IE: 'lte IE 8', '!IE': false } }
 
 global-js:
   js:
     libraries/jquery.uniform/jquery.uniform.min.js: {}
+    libraries/selectivizr-bower/selectivizr.js: { browsers: { IE: 'lte IE 8', '!IE': false } }
     js/modernizr.custom.min.js: {}
     js/celebr8d8.behavior.menu-toggle.min.js: {}
     js/celebr8d8.behavior.logo-swap.min.js: {}

@@ -2,7 +2,7 @@
   display: inline-block;
   vertical-align: middle;
   white-space: nowrap;
-  font-family: 'Bangers';
+  font-family: $banger-font-family;
   @include font-size(20px);
   cursor: pointer;
   margin: 0;
@@ -47,64 +47,8 @@
 }
 
 /**
- * Button size modifiers.
- *
- * These all follow the same sizing rules as above; text is 1em, space around it
- * remains uniform.
- */
-.button--small {
-  padding-right: 0.5em;
-  padding-left: 0.5em;
-  line-height: 2;
-  height: 2em;
-}
-.button--large {
-  padding-right: 1.5em;
-  padding-left: 1.5em;
-  line-height: 4;
-  height: 4em;
-}
-.button--huge {
-  padding-right: 2em;
-  padding-left: 2em;
-  line-height: 5;
-  height: 5em;
-}
-
-/**
- * These buttons will fill the entirety of their container.
- *
- * 1. Remove padding so that widths and paddings don’t conflict.
- */
-.button--full {
-  width: 100%;
-  padding-right: 0;           /* [1] */
-  padding-left: 0;            /* [1] */
-  text-align: center;
-}
-
-/**
- * Make the button inherit sizing from its parent.
- */
-.button--natural {
-  vertical-align: baseline;
-  font-size: inherit;
-  line-height: inherit;
-  height: auto;
-  padding-right: 0.5em;
-  padding-left: 0.5em;
-}
-
-/**
  * Button function modifiers.
  */
-.button--primary {
-
-}
-
-.button--tertiary {
-
-}
 
 .button--video {
   position: relative;
@@ -168,22 +112,6 @@
 .button--contrast {
   border-color: palette(mono, x-light);
   color: palette(mono, x-light);
-}
-
-/**
- * Positive actions; e.g. sign in, purchase, submit, etc.
- */
-.button--positive {
-  background-color: palette(positive);
-  color:#FFF;
-}
-
-/**
- * Negative actions; e.g. close account, delete photo, remove friend, etc.
- */
-.button--negative{
-  background-color: palette(negative);
-  color:#FFF;
 }
 
 /**
