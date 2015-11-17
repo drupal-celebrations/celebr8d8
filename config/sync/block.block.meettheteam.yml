@@ -1,0 +1,25 @@
+uuid: bf886f9e-cd93-4370-9738-566fc76f9670
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2ba17723-eaa6-45bb-a400-b12376edeadc'
+  module:
+    - block_content
+  theme:
+    - celebr8d8
+id: meettheteam
+theme: celebr8d8
+region: footer_second
+weight: -11
+provider: null
+plugin: 'block_content:2ba17723-eaa6-45bb-a400-b12376edeadc'
+settings:
+  id: 'block_content:2ba17723-eaa6-45bb-a400-b12376edeadc'
+  label: 'Meet the team'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
