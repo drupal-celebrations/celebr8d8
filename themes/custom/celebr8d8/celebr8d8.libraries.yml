@@ -3,7 +3,7 @@ global-css:
     theme:
       css/celebr8d8.normalize.css: {}
       css/celebr8d8.styles.css: {}
-      css/celebr8d8.no-query.css: { browsers: { IE: 'lte IE 8' }}
+      css/celebr8d8.no-query.css: { type: external, browsers: { IE: 'lte IE 8', '!IE': false } }
 
 global-js:
   js:
