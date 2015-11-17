@@ -58,17 +58,23 @@
 
     .node__content {
       position: relative;
-      padding-right: triple($spacing-unit-horizontal);
+      padding-bottom: $spacing-unit-vertical;
     }
 
     .field--name-field-drupal-org-username,
-    .field--name-field-twitter-account {
+    .field--name-field-twitter-account,
+    a[id^="flag-inappropriate-id-"] {
       position: absolute;
       bottom: 0;
     }
 
+    a[id^="flag-inappropriate-id-"] {
+      right: 66px;
+      margin-bottom: 1px;
+    }
+
     .field--name-field-drupal-org-username {
-      right: 35px;
+      right: 34px;
     }
 
     .field--name-field-twitter-account {
@@ -79,8 +85,8 @@
     .node__main {
       position: relative;
       background-color: palette(mono, x-light);
-      padding: 1.75em;
-      border-bottom: 1px solid palette(pink);
+      padding: 1.5em;
+      border-bottom: 1px solid palette(purple);
 
       &:before {
         position: absolute;
@@ -89,15 +95,25 @@
         content: '';
         width: 40%;
         height: 0;
-        border-top: 4px solid palette(pink);
+        border-top: 4px solid palette(purple);
       }
 
       > h2 {
         margin-top: 0;
         @include font-size(20px);
+      }
+    }
 
-        a {
-          text-decoration: none;
+    $colors: palette(pink), palette(orange), palette(orange, dark), palette(blue), palette(red), palette(green);
+
+    @for $i from 1 through length($colors) {
+      &.node--category-#{$i} {
+        .node__main {
+          border-bottom-color: nth($colors, $i);
+
+          &:before {
+            border-top-color: nth($colors, $i);
+          }
         }
       }
     }

@@ -1,0 +1,33 @@
+.node--type-film {
+  &.node--view-mode-full {
+    .field--name-field-your-name {
+      @extend .beta;
+      margin: 0;
+    }
+
+    .field--name-field-country {
+      @extend .gamma;
+    }
+
+    .node__main {
+      position: relative;
+      background-color: palette(mono, x-light);
+      padding: 1.75em;
+    }
+
+    .field--name-field-drupal-org-username,
+    .field--name-field-twitter-account,
+    a[id^="flag-inappropriate-id-"] {
+      float: right;
+      margin-left: halve($spacing-unit-horizontal);
+    }
+
+    .field--name-field-twitter-account {
+      margin-top: 4px;
+    }
+
+    a[id^="flag-inappropriate-id-"] {
+      margin-top: 2px;
+    }
+  }
+}

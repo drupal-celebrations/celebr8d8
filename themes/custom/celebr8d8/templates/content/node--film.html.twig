@@ -71,10 +71,10 @@
     node.isSticky() ? 'node--sticky',
     not node.isPublished() ? 'node--unpublished',
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+    category_class ? 'node--category-' ~ category_class,
   ]
 %}
 <article{{ attributes.addClass(classes) }}>
-
   {{ content.field_youtube_url }}
 
   <div class="node__main">

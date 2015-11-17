@@ -11,6 +11,7 @@ h6, .zeta {
 
   a {
     color: inherit;
+    text-decoration: none;
   }
 }
 
@@ -27,8 +28,22 @@ h1, .alpha {
     @include font-size(70px);
   }
 }
-h2, .beta {}
-h3, .gamma {}
-h4, .delta {}
-h5, .epsilon {}
-h6, .zeta {}
+h2, .beta {
+  @include font-size(26px);
+}
+
+h3, .gamma {
+  @include font-size(22px);
+}
+
+h4, .delta {
+  @include font-size(20px);
+}
+
+h5, .epsilon {
+  @include font-size(18px);
+}
+
+h6, .zeta {
+  @include font-size(16px);
+}

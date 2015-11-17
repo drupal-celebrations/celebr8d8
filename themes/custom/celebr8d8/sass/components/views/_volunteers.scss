@@ -31,3 +31,17 @@
     }
   }
 }
+
+.path-volunteers {
+  .l-featured-top {
+    background-image: image-url('team-banner.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+
+    @include breakpoint($l, true) {
+      padding-top: $spacing-unit-vertical * 8;
+      padding-bottom: quadruple($spacing-unit-vertical);
+    }
+  }
+}
