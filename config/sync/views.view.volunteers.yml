@@ -153,13 +153,14 @@ display:
           expose:
             label: ''
           granularity: second
-      title: Volunteers
+      title: '<span>Who''s behind </span>Celebr8 Drupal8?'
       header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      css_class: ''
     cache_metadata:
       max-age: -1
       contexts:

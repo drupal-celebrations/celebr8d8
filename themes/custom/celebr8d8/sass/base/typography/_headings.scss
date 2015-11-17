@@ -6,6 +6,7 @@ h5, .epsilon,
 h6, .zeta {
   margin-top: 0.4em;
   margin-bottom: 0.6em;
+  letter-spacing: -0.06em;
 
   line-height: 1.2em;
 
@@ -20,7 +21,6 @@ h1, .alpha {
   margin-bottom: 0;
   @include font-size(34px);
   font-weight: 700;
-  letter-spacing: -0.06em;
   line-height: 1;
   color: palette(mono, x-light);
 
