@@ -65,8 +65,6 @@
   .field--name-field-prof {
     margin-top: $spacing-unit-vertical;
     color: palette(purple);
-    @include font-size(22px);
-
 
     @include breakpoint($m, true) {
       padding-left: halve($spacing-unit-horizontal);

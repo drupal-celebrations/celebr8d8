@@ -21,8 +21,8 @@
     }
 
     @include breakpoint($l, true) {
-      padding-top: $spacing-unit-vertical * 6;
-      padding-bottom: triple($spacing-unit-vertical);
+      padding-top: $spacing-unit-vertical * 8;
+      padding-bottom: quadruple($spacing-unit-vertical);
     }
   }
 }

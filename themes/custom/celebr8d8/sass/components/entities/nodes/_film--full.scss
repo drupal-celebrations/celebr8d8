@@ -15,6 +15,10 @@
       padding: 1.75em;
     }
 
+    .node__content {
+      @extend %clearfix;
+    }
+
     .field--name-field-drupal-org-username,
     .field--name-field-twitter-account,
     a[id^="flag-inappropriate-id-"] {

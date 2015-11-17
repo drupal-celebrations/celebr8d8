@@ -1,5 +1,10 @@
 .node--type-film {
   &.node--view-mode-teaser {
+
+    > h2 {
+      color: palette(mono, dark);
+    }
+
     .field--name-field-youtube-url {
       img {
         width: 100%;
@@ -69,8 +74,7 @@
     }
 
     a[id^="flag-inappropriate-id-"] {
-      right: 66px;
-      margin-bottom: 1px;
+      left: 0;
     }
 
     .field--name-field-drupal-org-username {
