@@ -61,7 +61,7 @@ settings:
       label: Azerbaijan
     -
       value: BS
-      label: 'Bahamas'
+      label: Bahamas
     -
       value: BH
       label: Bahrain
@@ -160,13 +160,13 @@ settings:
       label: Colombia
     -
       value: KM
-      label: 'Comoros'
+      label: Comoros
     -
       value: CD
       label: 'Congo (the Democratic Republic of the)'
     -
       value: CG
-      label: 'Congo'
+      label: Congo
     -
       value: CK
       label: 'Cook Islands'
@@ -253,7 +253,7 @@ settings:
       label: Gabon
     -
       value: GM
-      label: 'Gambia'
+      label: Gambia
     -
       value: GE
       label: Georgia
@@ -481,7 +481,7 @@ settings:
       label: Nepal
     -
       value: NL
-      label: 'Netherlands'
+      label: Netherlands
     -
       value: NC
       label: 'New Caledonia'
@@ -493,7 +493,7 @@ settings:
       label: Nicaragua
     -
       value: NE
-      label: 'Niger'
+      label: Niger
     -
       value: NG
       label: Nigeria
@@ -535,7 +535,7 @@ settings:
       label: Peru
     -
       value: PH
-      label: 'Philippines'
+      label: Philippines
     -
       value: PN
       label: Pitcairn
@@ -643,7 +643,7 @@ settings:
       label: 'Sri Lanka'
     -
       value: SD
-      label: 'Sudan'
+      label: Sudan
     -
       value: SR
       label: Suriname
@@ -664,7 +664,7 @@ settings:
       label: 'Syrian Arab Republic'
     -
       value: TW
-      label: 'Taiwan'
+      label: Taiwan
     -
       value: TJ
       label: Tajikistan

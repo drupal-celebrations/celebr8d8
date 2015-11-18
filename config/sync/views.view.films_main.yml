@@ -157,46 +157,6 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
-        field_country_value:
-          id: field_country_value
-          table: node__field_country
-          field: field_country_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_country_value_op
-            label: Countries
-            description: ''
-            use_operator: false
-            operator: field_country_value_op
-            identifier: country
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          plugin_id: list_field
         field_category_target_id:
           id: field_category_target_id
           table: node__field_category
@@ -383,6 +343,7 @@ display:
         use_more_text: false
         filter: false
         filter_groups: false
+        filters: false
       style:
         type: grid
         options:
@@ -399,7 +360,7 @@ display:
         options:
           view_mode: teaser
       display_description: ''
-      block_description: 'Most Viewed Films'
+      block_description: Featured
       allow:
         items_per_page: false
       title: ''
@@ -438,7 +399,166 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
+        field_country_value:
+          id: field_country_value
+          table: node__field_country
+          field: field_country_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
           group: 1
+          exposed: true
+          expose:
+            operator_id: field_country_value_op
+            label: Countries
+            description: ''
+            use_operator: false
+            operator: field_country_value_op
+            identifier: country
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+        field_category_target_id:
+          id: field_category_target_id
+          table: node__field_category
+          field: field_category_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_category_target_id_op
+            label: Type
+            description: ''
+            use_operator: false
+            operator: field_category_target_id_op
+            identifier: field_category_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: film_category
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+        flagged:
+          id: flagged
+          table: flagging
+          field: flagged
+          relationship: flag_content_rel
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: '0'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: flagging
+          plugin_id: flag_filter
+        sticky:
+          id: sticky
+          table: node_field_data
+          field: sticky
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: true
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: sticky
+          plugin_id: boolean
       filter_groups:
         operator: AND
         groups:
