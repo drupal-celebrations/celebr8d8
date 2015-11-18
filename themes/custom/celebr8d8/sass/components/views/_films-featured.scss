@@ -61,7 +61,7 @@
         color: palette(mono, x-light);
         text-decoration: none;
         display: block;
-        font-family: 'Bangers';
+        font-family: $banger-font-family;
         padding-right: double($spacing-unit-horizontal) + 7px;
         padding-left: halve($spacing-unit-horizontal);
         @include font-size(20px);

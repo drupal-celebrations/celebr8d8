@@ -27,11 +27,11 @@
     }
 
     .field--name-field-twitter-account {
-      margin-top: 4px;
+      margin-top: 2px;
     }
 
     a[id^="flag-inappropriate-id-"] {
-      margin-top: 2px;
+      margin-top: halve($spacing-unit-vertical);
     }
   }
 }

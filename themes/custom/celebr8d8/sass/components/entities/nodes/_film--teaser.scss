@@ -71,6 +71,7 @@
 
     a[id^="flag-inappropriate-id-"] {
       left: 0;
+      bottom: -2px;
     }
 
     .field--name-field-drupal-org-username {
@@ -79,7 +80,6 @@
 
     .field--name-field-twitter-account {
       right: 0;
-      margin-bottom: 2px;
     }
 
     .node__main {
