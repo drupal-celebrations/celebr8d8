@@ -20,7 +20,7 @@ unflag_long: 'Unflag this content as inappropriate'
 unflag_message: Unflagged
 unflag_denied_text: 'Already Flagged'
 flag_type: 'entity:node'
-link_type: reload
+link_type: confirm
 flagTypeConfig:
   show_in_links:
     full: full
@@ -33,4 +33,6 @@ flagTypeConfig:
   show_contextual_link: 0
   i18n: '0'
   access_author: ''
-linkTypeConfig: {  }
+linkTypeConfig:
+  flag_confirmation: 'Flag this content as inappropriate?'
+  unflag_confirmation: 'Unflag this content as inappropriate?'
