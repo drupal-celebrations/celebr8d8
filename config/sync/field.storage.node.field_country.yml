@@ -61,7 +61,7 @@ settings:
       label: Azerbaijan
     -
       value: BS
-      label: 'Bahamas (the)'
+      label: 'Bahamas'
     -
       value: BH
       label: Bahrain
@@ -109,7 +109,7 @@ settings:
       label: Brazil
     -
       value: IO
-      label: 'British Indian Ocean Territory (the)'
+      label: 'British Indian Ocean Territory'
     -
       value: BN
       label: 'Brunei Darussalam'
@@ -136,10 +136,10 @@ settings:
       label: Canada
     -
       value: KY
-      label: 'Cayman Islands (the)'
+      label: 'Cayman Islands'
     -
       value: CF
-      label: 'Central African Republic (the)'
+      label: 'Central African Republic'
     -
       value: TD
       label: Chad
@@ -154,22 +154,22 @@ settings:
       label: 'Christmas Island'
     -
       value: CC
-      label: 'Cocos (Keeling) Islands (the)'
+      label: 'Cocos (Keeling) Islands'
     -
       value: CO
       label: Colombia
     -
       value: KM
-      label: 'Comoros (the)'
+      label: 'Comoros'
     -
       value: CD
       label: 'Congo (the Democratic Republic of the)'
     -
       value: CG
-      label: 'Congo (the)'
+      label: 'Congo'
     -
       value: CK
-      label: 'Cook Islands (the)'
+      label: 'Cook Islands'
     -
       value: CR
       label: 'Costa Rica'
@@ -190,7 +190,7 @@ settings:
       label: Cyprus
     -
       value: CZ
-      label: 'Czech Republic (the)'
+      label: 'Czech Republic'
     -
       value: DK
       label: Denmark
@@ -202,7 +202,7 @@ settings:
       label: Dominica
     -
       value: DO
-      label: 'Dominican Republic (the)'
+      label: 'Dominican Republic'
     -
       value: EC
       label: Ecuador
@@ -226,10 +226,10 @@ settings:
       label: Ethiopia
     -
       value: FK
-      label: 'Falkland Islands (the) [Malvinas]'
+      label: 'Falkland Islands [Malvinas]'
     -
       value: FO
-      label: 'Faroe Islands (the)'
+      label: 'Faroe Islands'
     -
       value: FJ
       label: Fiji
@@ -247,13 +247,13 @@ settings:
       label: 'French Polynesia'
     -
       value: TF
-      label: 'French Southern Territories (the)'
+      label: 'French Southern Territories'
     -
       value: GA
       label: Gabon
     -
       value: GM
-      label: 'Gambia (the)'
+      label: 'Gambia'
     -
       value: GE
       label: Georgia
@@ -304,7 +304,7 @@ settings:
       label: 'Heard Island and McDonald Islands'
     -
       value: VA
-      label: 'Holy See (the)'
+      label: 'Holy See'
     -
       value: HN
       label: Honduras
@@ -376,7 +376,7 @@ settings:
       label: Kyrgyzstan
     -
       value: LA
-      label: 'Lao People''s Democratic Republic (the)'
+      label: 'Lao People''s Democratic Republic'
     -
       value: LV
       label: Latvia
@@ -427,7 +427,7 @@ settings:
       label: Malta
     -
       value: MH
-      label: 'Marshall Islands (the)'
+      label: 'Marshall Islands'
     -
       value: MQ
       label: Martinique
@@ -481,7 +481,7 @@ settings:
       label: Nepal
     -
       value: NL
-      label: 'Netherlands (the)'
+      label: 'Netherlands'
     -
       value: NC
       label: 'New Caledonia'
@@ -493,7 +493,7 @@ settings:
       label: Nicaragua
     -
       value: NE
-      label: 'Niger (the)'
+      label: 'Niger'
     -
       value: NG
       label: Nigeria
@@ -505,7 +505,7 @@ settings:
       label: 'Norfolk Island'
     -
       value: MP
-      label: 'Northern Mariana Islands (the)'
+      label: 'Northern Mariana Islands'
     -
       value: 'NO'
       label: Norway
@@ -535,7 +535,7 @@ settings:
       label: Peru
     -
       value: PH
-      label: 'Philippines (the)'
+      label: 'Philippines'
     -
       value: PN
       label: Pitcairn
@@ -559,7 +559,7 @@ settings:
       label: Romania
     -
       value: RU
-      label: 'Russian Federation (the)'
+      label: 'Russian Federation'
     -
       value: RW
       label: Rwanda
@@ -643,7 +643,7 @@ settings:
       label: 'Sri Lanka'
     -
       value: SD
-      label: 'Sudan (the)'
+      label: 'Sudan'
     -
       value: SR
       label: Suriname
@@ -664,7 +664,7 @@ settings:
       label: 'Syrian Arab Republic'
     -
       value: TW
-      label: 'Taiwan (Province of China)'
+      label: 'Taiwan'
     -
       value: TJ
       label: Tajikistan
@@ -700,7 +700,7 @@ settings:
       label: Turkmenistan
     -
       value: TC
-      label: 'Turks and Caicos Islands (the)'
+      label: 'Turks and Caicos Islands'
     -
       value: TV
       label: Tuvalu
@@ -712,13 +712,13 @@ settings:
       label: Ukraine
     -
       value: AE
-      label: 'United Arab Emirates (the)'
+      label: 'United Arab Emirates'
     -
       value: GB
       label: 'United Kingdom'
     -
       value: UM
-      label: 'United States Minor Outlying Islands (the)'
+      label: 'United States Minor Outlying Islands'
     -
       value: US
       label: 'United States of America'
