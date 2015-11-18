@@ -10,14 +10,14 @@
    */
   Drupal.behaviors.homePageJump = {
     attach: function () {
-      if (/[?&]country=/.test(location.href)) {
+      if (/[?&]field_category_target_id=/.test(location.href)) {
         $(window).load(function () {
           var $target = $('#block-celebr8d8-content'),
             targetOffset = $target.offset().top;
 
           $('html, body').animate({
             scrollTop: targetOffset
-          }, 1000);
+          }, 800);
         });
       }
 
